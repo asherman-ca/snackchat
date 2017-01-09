@@ -9,58 +9,35 @@
     },
     errors: []
   },
-  Reviews: {
+  Dishes: {
     '1': {
       id: '1',
-      title: 'review name',
-      userId: '1',
-      body: 'great food!',
-      comments: {
-        '1': {
-          userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
-        },
-        '2': {
-          userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
-        }
-      }
+      name: 'Pizza',
     },
-    '1': {
+    '2': {
       id: '2',
-      title: 'review name',
-      userId: '1',
-      body: 'great food!',
-      comments: {
-        '1': {
-          userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
-        },
-        '2': {
-          userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
-        }
+      name: 'burger',
     },
-    '1': {
+    '3': {
       id: '3',
-      title: 'review name',
-      userId: '1',
-      body: 'Song lyrics live here',
-      comments: {
+      name: 'burrito'
+    },
+    itemDetail: {
+      dishId: '1',
+      reviews: [
         '1': {
-          userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
-        },
+          userId: 1,
+          dishId: 1,
+          img_url: '/something/something',
+          body: "great pizza"
+        }
         '2': {
           userId: 2,
-          reviewId: 1,
-          body: "spot on review!"
+          dishId: 1,
+          img_url: '/something/something',
+          body: "best pizza"
         }
+      ]
     }
   }
 ```
