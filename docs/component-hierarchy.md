@@ -7,20 +7,17 @@
  - Home
  - Navbar
 
-**CommentsContainer**
- - CommendsHeader
-  * CommentIndex
+**DishesContainer**
+ - DishHeader
+  + DishIndex
+
+**NewDishContainer**
+ - NewDish
+  - NewDishButton
 
 **ReviewsContainer**
  - ReviewsHeader
   + CommentIndex
-
-**SearchResultsContainer**
- - Search
- - ReviewIndex
-
-**CommentsIndex**
- - CommentIndexItem
 
 **ReviewsIndex**
  - ReviewIndexItem
@@ -28,19 +25,16 @@
 **ReviewItems**
  - CommentIndex
 
-**NewCommentContainer**
- - NewComment
-  - NewCommentButton
-
 **NewReviewContainer**
  - NewReview
   - NewReviewButton
 
-**Search**
+**PofileContainer**
+ - ReviewIndex
 
-**ReviewSearch**
- + AutoSearch
- * AutoSearchResults
+
+**ProfileItem**  
+
 
 
 ## Routes
