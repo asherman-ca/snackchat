@@ -35,7 +35,7 @@ class Welcome extends React.Component {
         <div>
           <div className="welcome-text">
             <p>DISCOVER AND SHARE</p>
-            <p>YOUR FAVORITE DISHES</p>
+            <p>MY FAVORITE DISHES</p>
           </div>
           <div className="welcome-buttons">
             <button onClick={ (e) => this.handleButton(e, "login") }>Login</button>
