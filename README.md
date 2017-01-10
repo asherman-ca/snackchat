@@ -27,11 +27,11 @@ sufficient CSS styling:
 * [DB schema][schema]
 * [Sample State][sample-state]
 
-[wireframes]: docs/wireframes
-[components]: docs/component-hierarchy.md
-[sample-state]: docs/sample-state.md
-[api-endpoints]: docs/api-endpoints.md
-[schema]: docs/schema.md
+[wireframes]: wireframes
+[components]: component-hierarchy.md
+[sample-state]: sample-state.md
+[api-endpoints]: api-endpoints.md
+[schema]: schema.md
 
 ## Implementation Timeline
 
@@ -39,26 +39,27 @@ sufficient CSS styling:
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Reviews Model, API, and components (2 days)
+### Phase 2: Dishes Model, API, and components (2 days)
 
-**Objective:** Reviews can be created, read, edited and destroyed through
-the API.
+**Objective:** Dishes can be created, read, edited and destroyed through the API.
 
-### Phase 3: Comments (2 day)
+### Phase 3: Reviews (2 days)
 
-**Objective:** Comments belong to Reviews that can be created, read, edited and destroyed through the API.
+**Objective:** Users can create reviews for dishes
 
-### Phase 5: Profiles (2 days)
+### Phase 3: Profiles (2 days)
 
-**Objective:** Users have profiles that display their reviews and username
+**Objective:** Users have profiles that display their reviews
 
-### Phase 6: - infinite scroll for Reviews Index (1 day)
+### Phase 4: - infinite scroll for Reviews Index (1 day)
 
 **objective:** Add infinite scroll to reviews index
 
-### Phase 7: - style overhaul (2 days)
+### Phase 5: - style overhaul (2 days)
 
 **objective:** Make site drop dead gorgeous with seamless UX
 
+
 ### Bonus Features (TBD)
 - [ ] Search reviews by content
+- [ ] Comments

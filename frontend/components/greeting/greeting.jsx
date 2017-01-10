@@ -16,10 +16,8 @@ const personalGreeting = (currentUser, logout) => (
 	</hgroup>
 );
 
-const Greeting = ({ currentUser, logout }) => {
-  debugger
-  return (
+const Greeting = ({ currentUser, logout }) => (
   currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
-)};
+);
 
 export default Greeting;
