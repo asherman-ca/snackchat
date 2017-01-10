@@ -4,12 +4,11 @@ import Root from './components/root';
 import configureStore from './store/store';
 
 //window testing
-import { signup, logout } from './util/session_api_util.js';
-import { login } from './actions/session_actions.js';
-window.login = login;
-window.signup = signup;
-window.logout = logout;
-// window.store = configureStore();
+// import { signup, logout } from './util/session_api_util.js';
+// import { login } from './actions/session_actions.js';
+// window.login = login;
+// window.signup = signup;
+// window.logout = logout;
 //end window testing
 
 document.addEventListener('DOMContentLoaded', () => {
