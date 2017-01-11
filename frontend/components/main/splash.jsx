@@ -5,11 +5,11 @@ const Splash = ({ children }) => (
   <div>
     <div className='navbar'>
       <div className='navbar-logo'>
-        <h1><Link to='/'>Logo</Link></h1>
+        <Link to='/'><img src="assets/Logomakr_9HsNws.png"/></Link>
       </div>
 
       <div className='navbar-header'>
-        <h1><Link to='/'>SnackChat</Link></h1>
+        <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks!</p>
       </div>
 
       <div className='navbar-buttons'>

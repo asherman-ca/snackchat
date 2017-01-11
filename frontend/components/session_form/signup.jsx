@@ -48,15 +48,16 @@ class SignupForm extends React.Component {
                  onChange={ this.update('password')}
                  className='form-input'></input>
 
+               <div className="form-aligner">
           <input type='submit'
                  className='form-button'
                  value='Signup'></input>
 
           <span className='form-span'>
-            Have an account? <Link to='/login'>Login</Link>
+            {"Have an account?"} <Link to='/login'>Login</Link>
           </span>
+          </div>
         </form>
-
       </div>
 
     );

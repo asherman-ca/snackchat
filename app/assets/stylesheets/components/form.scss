@@ -1,10 +1,9 @@
 .form {
   display: block;
   width: 20vw;
-  background: rgba(162, 163, 165, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 8px;
-  font-family: sans-serif;
   color: #191918;
   position: absolute;
   top: 20vh;
@@ -12,11 +11,11 @@
 }
 
 .form-input {
-  border-bottom: 1px solid #7c7c7c;
+  border-bottom: 1px solid #175868;
 }
 
 .form-input:focus {
-  border-bottom: 1px solid #0e9ef7;
+  border-bottom: 1px solid #175868;
 }
 
 .form-input, .form-label, .form-button {
@@ -39,7 +38,6 @@
   display: block;
   width: 100%;
   font-size: 0.9em;
-  text-align: right;
 
   a {
     color: #0c173f;
@@ -50,25 +48,29 @@
   }
 }
 
-
 .form-button {
-  background-color: #3c843a;
+  background-color: #175868;
   width: 30%;
   padding: 5px 0;
   margin: 10px auto;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  box-shadow: 3px 3px 3px #2f562d;
+  box-shadow: 3px 3px 3px #000000;
   border-radius: 20px;
 }
 
 .form-button:hover {
-  background-color: #376835;
+  background-color: #175868;
 }
 
 .form-button:active {
   box-shadow: none;
-  background-color: #376835;
+  background-color: #175868;
   transform: translateY(3px);
+}
+
+.form-aligner {
+  display: flex;
+  flex-direction: column-reverse;
 }

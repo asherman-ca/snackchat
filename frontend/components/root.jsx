@@ -1,17 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-
-// react router
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-
-// react components
-// import SessionFormContainer from './session_form/session_form_container.js';
 import App from './app';
 import Splash from './main/splash';
 import SplashDisplay from './main/display';
 import SessionFormContainer from './session_form/session_form_container';
-
-
 
 const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
@@ -25,7 +18,7 @@ const Root = ({ store }) => {
     if(store.getState().session.currentUser) {
       replace('/browse');
     } else {
-      replace('/splash');
+      replace('/login');
     }
   };
 

@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
         <form onSubmit={this.loginUser} className='form'>
           <label htmlFor='username'
                  className='form-label'>
-            { "Username / Email" }
+            { "Username" }
           </label>
 
           <input name='username'
@@ -50,13 +50,15 @@ class LoginForm extends React.Component {
                  onChange={ this.update('password')}
                  className='form-input'></input>
 
-          <input type='submit'
-                 className='form-button'
-                 value='Login'></input>
+          <div className="form-aligner">
+            <input type='submit'
+                   className='form-button'
+                   value='Login'></input>
 
-          <span className='form-span'>
-            Need an account? <Link to='/signup'>Sign Up</Link>
-          </span>
+            <span className='form-span'>
+              {"Need an account?"} <Link to='/signup'>Sign Up</Link>
+            </span>
+          </div>
         </form>
 
       </div>

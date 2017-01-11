@@ -2,9 +2,8 @@
   background-image: image_url('2opwuc_wcmw-hans-vivek.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 94vh;
+  height: 90vh;
   width: 100vw;
-  // filter: blur(3px) brightness(0.8);
 }
 
 .splash-display {
@@ -22,8 +21,9 @@
 
   h1 {
     display: block;
-    font-size: 6em;
-    text-shadow: 3px 3px 3px white;
+    font-size: 4em;
+    text-shadow: 3px 3px 3px #000000;
+    color: #175868;
   }
 
   .splash-buttons {

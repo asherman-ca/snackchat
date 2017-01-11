@@ -2,7 +2,7 @@ $bg-1-4: #143313;
 $bg-2-4: #1A5A35;
 $bg-3-4: #218E93;
 $bg-4-4: #082A33;
-$line-height: 6vh;
+$line-height: 10vh;
 
 .navbar {
   height: $line-height;
@@ -10,6 +10,12 @@ $line-height: 6vh;
   justify-content: space-between;
   background: rgba(255, 255, 255, 1);
   color: #dddddd;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 .navbar-header h1 {
@@ -22,11 +28,29 @@ $line-height: 6vh;
   color: #175868;
 }
 
-.navbar-logo h1 {
+.navbar-header p {
+  // line-height: $line-height;
+  text-decoration: underline;
   display: block;
   line-height: $line-height;
   margin-left: 15px;
+  // padding-left: 12vw;
+  font-size: 2em;
+  color: #175868;
 }
+
+.navbar-logo {
+ width: $line-height;
+ padding-left: 10px;
+ padding-top: 15px;
+}
+
+// .navbar-logo h1 {
+//   display: block;
+//   line-height: $line-height;
+//   margin-left: 15px;
+//   color: #175868;
+// }
 
 .navbar-buttons {
   display: flex;
