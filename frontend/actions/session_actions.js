@@ -34,6 +34,10 @@ export const logout = () => dispatch => (
   )
 );
 
+export const clearErrors = () => dispatch => (
+  dispatch(removeErrors())
+);
+
 export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,
   currentUser
@@ -44,6 +48,6 @@ export const receiveErrors = errors => ({
   errors
 });
 
-export const clearErrors = () => ({
+export const removeErrors = () => ({
   type: CLEAR_ERRORS,
 });

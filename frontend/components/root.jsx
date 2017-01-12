@@ -4,15 +4,9 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import AppContainer from './app/app_container';
 import SplashContainer from './splash/splash_container';
 import SessionFormContainer from './session_form/session_form_container';
-import { clearErrors } from '../actions/session_actions';
+import { clearErrors, removeErrors } from '../actions/session_actions';
 
 const Root = ({ store }) => {
-  const _redirectIfLoggedIn = (nextState, replace) => {
-    const currentUser = store.getState().session.currentUser;
-    if (currentUser) {
-      replace('/browse');
-    }
-  };
 
   const _redirect = (nextState, replace) => {
     if(store.getState().session.currentUser) {
@@ -20,6 +14,10 @@ const Root = ({ store }) => {
     } else {
       replace('/login');
     }
+  };
+
+  const _clearErrs = () => {
+    store.dispatch(removeErrors());
   };
 
   return (
@@ -30,8 +28,8 @@ const Root = ({ store }) => {
         <IndexRoute onEnter={ _redirect } />
 
         <Route path="/splash" component={ SplashContainer }>
-          <Route path="/login" component={ SessionFormContainer} />
-          <Route path="/signup" component={ SessionFormContainer} />
+          <Route path="/login" component={ SessionFormContainer} onEnter={ _clearErrs } />
+          <Route path="/signup" component={ SessionFormContainer} onEnter={ _clearErrs } />
         </Route>
 
         <Route path="/browse" component={AppContainer}>
