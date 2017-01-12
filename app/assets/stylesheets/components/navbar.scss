@@ -7,7 +7,7 @@ $line-height: 10vh;
 .navbar {
   height: $line-height;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background: rgba(255, 255, 255, 1);
   color: #dddddd;
 }
