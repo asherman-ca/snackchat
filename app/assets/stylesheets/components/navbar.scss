@@ -25,7 +25,7 @@ $line-height: 10vh;
   margin-left: 15px;
   padding-left: 12vw;
   font-size: 3em;
-  color: #175868;
+  color: rgb(147,16,9);
 }
 
 .navbar-header p {
@@ -36,13 +36,12 @@ $line-height: 10vh;
   margin-left: 15px;
   // padding-left: 12vw;
   font-size: 2em;
-  color: #175868;
+  color: rgb(147,16,9);
 }
 
 .navbar-logo {
- width: $line-height;
+ width: 12vh;
  padding-left: 10px;
- padding-top: 15px;
 }
 
 // .navbar-logo h1 {
@@ -69,8 +68,8 @@ $line-height: 10vh;
       padding: 5px 8px;
       width: 80px;
       text-align: center;
-      background: #0c4e5f;
-      box-shadow: 2px 2px 2px #0a5568;
+      background: rgb(147,16,9);
+      box-shadow: 2px 2px 2px #000000;
 
       span {
         cursor: pointer;
@@ -90,7 +89,7 @@ $line-height: 10vh;
     }
 
     a:hover {
-      background: #175868;
+      background: #000000;
 
       span {
         padding-right: 15px;
@@ -103,7 +102,7 @@ $line-height: 10vh;
     }
 
     a:active {
-      background: #175868;
+      background: rgb(147,16,9);
       box-shadow: none;
       transform: translateY(2px);
     }

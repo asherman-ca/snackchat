@@ -10,7 +10,7 @@ const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/');
+      replace('/browse');
     }
   };
 
@@ -35,7 +35,6 @@ const Root = ({ store }) => {
         </Route>
 
         <Route path="/browse" component={App}>
-
         </Route>
       </Route>
     </Router>

@@ -4,18 +4,18 @@
   background: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border-radius: 8px;
-  color: #191918;
+  color: rgb(147,16,9);
   position: absolute;
   top: 20vh;
   left: 40vw;
 }
 
 .form-input {
-  border-bottom: 1px solid #175868;
+  border-bottom: 1px solid rgb(147,16,9);
 }
 
 .form-input:focus {
-  border-bottom: 1px solid #175868;
+  border-bottom: 1px solid rgb(147,16,9);
 }
 
 .form-input, .form-label, .form-button {
@@ -49,7 +49,7 @@
 }
 
 .form-button {
-  background-color: #175868;
+  background-color: rgb(147,16,9);
   width: 30%;
   padding: 5px 0;
   margin: 10px auto;
@@ -58,15 +58,16 @@
   font-weight: bold;
   box-shadow: 3px 3px 3px #000000;
   border-radius: 20px;
+  color: white;
 }
 
 .form-button:hover {
-  background-color: #175868;
+  background-color: #000000;
 }
 
 .form-button:active {
   box-shadow: none;
-  background-color: #175868;
+  background-color: rgb(147,16,9);
   transform: translateY(3px);
 }
 

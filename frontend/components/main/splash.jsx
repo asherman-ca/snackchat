@@ -5,7 +5,7 @@ const Splash = ({ children }) => (
   <div>
     <div className='navbar'>
       <div className='navbar-logo'>
-        <Link to='/'><img src="http://res.cloudinary.com/devwor0u0/image/upload/v1484177115/Logomakr_9HsNws_wvu8r8.png"/></Link>
+        <Link to='/'><img src="http://res.cloudinary.com/devwor0u0/image/upload/v1484180645/SnackChat_hwfh0w.png"/></Link>
       </div>
 
       <div className='navbar-header'>
