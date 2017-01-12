@@ -1,9 +1,10 @@
 import { connect } from 'react-redux';
+import App from './app';
 import { logout } from '../../actions/session_actions';
-import Greeting from './greeting';
 
 const mapStateToProps = ({ session }) => ({
-  currentUser: session.currentUser
+  loggedIn: Boolean(session.currentUser),
+  errors: session.errors
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -13,4 +14,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Greeting);
+)(App);
