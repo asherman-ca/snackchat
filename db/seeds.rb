@@ -7,3 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(username: "Guest", password: "password")
+Snack.create(name: "Fries", picture_url: "http://res.cloudinary.com/devwor0u0/image/upload/v1484177093/2opwuc_wcmw-hans-vivek_culpzm.jpg", description: "Fried Potatoes")
+Rating.create(user_id: 1, snack_id: 1, rating: 5)
