@@ -1,14 +1,7 @@
 export const addSnack = (snack) => {
   return $.ajax({
     method: 'POST',
-    url: '/api/snack',
+    url: '/api/snacks',
     data: {snack}
-  });
-};
-
-export const getSnacks = (snack) => {
-  return $.ajax({
-    method: 'GET',
-    url: '/api/snack'
   });
 };

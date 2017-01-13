@@ -33,7 +33,7 @@ class App extends React.Component {
             </div>
             <div className='navbar-buttons'>
               <div className='navbar-button'>
-                <Link to='/'>
+                <Link to='/add'>
                   <span>Share</span>
                 </Link>
               </div>

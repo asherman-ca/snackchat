@@ -1,0 +1,75 @@
+.snackform {
+  display: block;
+  width: 20vw;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  color: rgb(147,16,9);
+  position: absolute;
+  top: 20vh;
+  left: 40vw;
+}
+
+.snackform-input {
+  border-bottom: 1px solid rgb(147,16,9);
+}
+
+.snackform-input:focus {
+  border-bottom: 1px solid rgb(147,16,9);
+}
+
+.snackform-input, .form-label, .form-button {
+  display: block;
+  width: 100%;
+  margin: 5px;
+  padding-top: 10px;
+}
+
+.snackform-span {
+  padding-top: 5px;
+  display: block;
+  width: 100%;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  a {
+    color: #0c173f;
+    margin-left: 5px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.snackform-button {
+  background-color: rgb(147,16,9);
+  width: 30%;
+  padding: 5px 0;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  // box-shadow: 3px 3px 3px #000000;
+  border-radius: 2px;
+  color: white;
+  transition: 0.5s;
+}
+
+.snackform-button:hover {
+  background-color: #000000;
+  padding-right: 15px;
+}
+
+.snackform-button:active {
+  box-shadow: none;
+  background-color: rgb(147,16,9);
+  transform: translateY(3px);
+}
+
+.snackform-aligner {
+  display: flex;
+  flex-direction: column-reverse;
+}

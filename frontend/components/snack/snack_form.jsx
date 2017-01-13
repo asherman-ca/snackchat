@@ -5,27 +5,25 @@ class SnackForm extends React.Component {
   constructor(props) {
     super(props);
 
-    // this.state = {
-    //   name: '',
-    //   picture_url: '',
-    //   description: ''
-    // };
-    //
-    // this.addSnack = this.addSnack.bind(this);
+    this.state = {
+      name: '',
+      picture_url: '',
+      description: ''
+    };
   }
 
-  // snackAdd(e) {
-  //   e.preventDefault();
-  //   this.props.addSnack(this.state);
-  // }
-  //
-  // update(field) {
-  //   return e => {
-  //     this.setState({
-  //       [field]: e.target.value
-  //     });
-  //   };
-  // }
+  snackAdd(e) {
+    e.preventDefault();
+    this.props.addSnack(this.state);
+  }
+
+  update(field) {
+    return e => {
+      this.setState({
+        [field]: e.target.value
+      });
+    };
+  }
 
   renderErrors() {
     return (
