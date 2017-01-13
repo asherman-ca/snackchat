@@ -5,13 +5,17 @@ class Api::SnacksController < ApplicationController
     if @snack.save
       render "api/snacks/show"
     else
-      render json: @user.errors.full_messages, status: 422
+      render json: @snack.errors.full_messages, status: 422
     end
+  end
+
+  def show
+    @snack = Snack.find(params[:id])
   end
 
   private
 
   def snack_params
-    params.require(:snack).permit(:name, :image_url, :description)
+    params.require(:snack).permit(:name, :picture_url, :description)
   end
 end

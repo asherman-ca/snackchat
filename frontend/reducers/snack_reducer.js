@@ -1,17 +1,16 @@
 import {
-  RECEIVE_SNACK,
-  RECEIVE_SNACKS
+  RECEIVE_SNACK
 } from '../actions/snack_actions';
 import {merge} from 'lodash';
 
-const SnackReducer = ( state = [] , action ) => {
-  Object.freeze(state);
+const SnackReducer = ( state = {} , action ) => {
   debugger
+  Object.freeze(state);
   switch(action.type) {
     case RECEIVE_SNACK:
-      return merge([], state, action.snack);
-    case RECEIVE_SNACKS:
-      return merge([], state, action.snacks);
+      let newState = merge({}, state, {[action.snack.id]:action.snack});
+      debugger
+      return newState
     default:
       return state;
   }

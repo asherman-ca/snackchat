@@ -56,6 +56,9 @@
   border-radius: 2px;
   color: white;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .snackform-button:hover {
