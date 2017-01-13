@@ -35,7 +35,7 @@ class Splash extends React.Component {
             </div>
 
             <div className='navbar-header'>
-              <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks!</p>
+              <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
 
             <div className='navbar-buttons'>

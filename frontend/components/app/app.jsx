@@ -30,10 +30,20 @@ class App extends React.Component {
             </div>
 
             <div className='navbar-header'>
-              <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks!</p>
+              <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
 
             <div className='navbar-buttons'>
+              <div className='navbar-button'>
+                <Link to='/'>
+                  <span>Share</span>
+                </Link>
+              </div>
+              <div className='navbar-button btn-hidden'>
+                <Link to='/browse'>
+                  <span>Home</span>
+                </Link>
+              </div>
             <div className='navbar-button'>
               <a onClick={ () => this.props.logout()}>
                 <span>Logout</span>

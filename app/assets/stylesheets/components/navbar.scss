@@ -43,13 +43,6 @@ $line-height: 10vh;
  padding-left: 10px;
 }
 
-// .navbar-logo h1 {
-//   display: block;
-//   line-height: $line-height;
-//   margin-left: 15px;
-//   color: #175868;
-// }
-
 .navbar-buttons {
   display: flex;
   align-items: center;
@@ -57,7 +50,6 @@ $line-height: 10vh;
   .navbar-button {
     margin: 0 15px;
     // width: 80px;
-
 
     a {
       display: block;
@@ -77,14 +69,6 @@ $line-height: 10vh;
         transition: 0.5s;
       }
 
-      // span:after {
-      //   content: '\00bb';
-      //   position: absolute;
-      //   opacity: 0;
-      //   top: 0;
-      //   right: -20px;
-      //   transition: 0.5s;
-      // }
     }
 
     a:hover {
@@ -106,30 +90,6 @@ $line-height: 10vh;
       transform: translateY(2px);
     }
 
-
   }
 
-  // .btn-login a {
-  //   background: $bg-1-4; /* For browsers that do not support gradients */
-  //   background: -webkit-linear-gradient(left, $bg-1-4 , $bg-2-4); /* For Safari 5.1 to 6.0 */
-  //   background: -o-linear-gradient(right, $bg-1-4, $bg-2-4); /* For Opera 11.1 to 12.0 */
-  //   background: -moz-linear-gradient(right, $bg-1-4, $bg-2-4); /* For Firefox 3.6 to 15 */
-  //   background: linear-gradient(to right, $bg-1-4 , $bg-2-4); /* Standard syntax */
-  // }
-  //
-  // .btn-signup a {
-  //   background: $bg-2-4; /* For browsers that do not support gradients */
-  //   background: -webkit-linear-gradient(left, $bg-2-4 , $bg-3-4); /* For Safari 5.1 to 6.0 */
-  //   background: -o-linear-gradient(right, $bg-2-4, $bg-3-4); /* For Opera 11.1 to 12.0 */
-  //   background: -moz-linear-gradient(right, $bg-2-4, $bg-3-4); /* For Firefox 3.6 to 15 */
-  //   background: linear-gradient(to right, $bg-2-4 , $bg-3-4); /* Standard syntax */
-  // }
-  //
-  // .btn-demo a {
-  //   background: $bg-3-4; /* For browsers that do not support gradients */
-  //   background: -webkit-linear-gradient(left, $bg-3-4 , $bg-4-4); /* For Safari 5.1 to 6.0 */
-  //   background: -o-linear-gradient(right, $bg-3-4, $bg-4-4); /* For Opera 11.1 to 12.0 */
-  //   background: -moz-linear-gradient(right, $bg-3-4, $bg-4-4); /* For Firefox 3.6 to 15 */
-  //   background: linear-gradient(to right, $bg-3-4 , $bg-4-4); /* Standard syntax */
-  // }
 }
