@@ -5,6 +5,7 @@ import AppContainer from './app/app_container';
 import SplashContainer from './splash/splash_container';
 import SessionFormContainer from './session_form/session_form_container';
 import FeedContainer from './feed/feed_container';
+import SnackFormContainer from './snack/snack_form_container';
 import { clearErrors, removeErrors } from '../actions/error_actions';
 
 const Root = ({ store }) => {
@@ -28,7 +29,7 @@ const Root = ({ store }) => {
       <Route path="/">
         <IndexRoute onEnter={ _redirect } />
 
-        <Route path="/splash" component={ SplashContainer }>
+        <Route component={ SplashContainer }>
           <Route path="/login" component={ SessionFormContainer} onEnter={ _clearErrs } />
           <Route path="/signup" component={ SessionFormContainer} onEnter={ _clearErrs } />
         </Route>
@@ -36,6 +37,7 @@ const Root = ({ store }) => {
         <Route path="/browse" component={ AppContainer }>
           <IndexRoute component={ FeedContainer }/>
           <Route path='/feed' component={ FeedContainer } />
+          <Route path='/add' component={ SnackFormContainer } />
         </Route>
 
       </Route>

@@ -5,3 +5,10 @@ export const addSnack = (snack) => {
     data: {snack}
   });
 };
+
+export const getSnacks = (snack) => {
+  return $.ajax({
+    method: 'GET',
+    url: '/api/snack'
+  });
+};
