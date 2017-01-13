@@ -5,7 +5,7 @@ import AppContainer from './app/app_container';
 import SplashContainer from './splash/splash_container';
 import SessionFormContainer from './session_form/session_form_container';
 import FeedContainer from './feed/feed_container';
-import { clearErrors, removeErrors } from '../actions/session_actions';
+import { clearErrors, removeErrors } from '../actions/error_actions';
 
 const Root = ({ store }) => {
 
