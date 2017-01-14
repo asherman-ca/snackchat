@@ -16,7 +16,8 @@ class SnackForm extends React.Component {
 
   snackAdd(e) {
     e.preventDefault();
-    this.props.addSnack(this.state);
+    this.props.addSnack(this.state).then(
+      () => this.props.router.replace('/browse'));
   }
 
   update(field) {
@@ -38,6 +39,7 @@ class SnackForm extends React.Component {
   render() {
     return (
       <div>
+        { this.renderErrors() }
         <form onSubmit={this.snackAdd} className='snackform'>
 
           <label htmlFor='name' className='snackform-label'>

@@ -1,7 +1,3 @@
-$bg-1-4: #143313;
-$bg-2-4: #1A5A35;
-$bg-3-4: #218E93;
-$bg-4-4: #082A33;
 $line-height: 10vh;
 
 .navbar {
@@ -38,9 +34,15 @@ $line-height: 10vh;
   color: rgb(147,16,9);
 }
 
+.navbar-logo-container {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
 .navbar-logo {
  width: 12vh;
- padding-left: 10px;
+ // padding-left: 10px;
 }
 
 .navbar-buttons {
