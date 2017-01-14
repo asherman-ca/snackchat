@@ -13,9 +13,14 @@ class Api::SnacksController < ApplicationController
     @snack = Snack.find(params[:id])
   end
 
+  def index
+    @snacks = current_user.snacks
+  end
+
   private
 
   def snack_params
-    params.require(:snack).permit(:name, :picture_url, :description)
+    params.require(:snack).permit(:name, :picture_url, :description, :user_id)
   end
+
 end

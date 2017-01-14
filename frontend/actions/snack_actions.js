@@ -2,6 +2,7 @@ import * as APIUtil from '../util/snack_api_util';
 import { receiveErrors, clearErrors } from './error_actions.js';
 
 export const RECEIVE_SNACK = "RECEIVE_SNACK";
+export const RECEIVE_SNACKS = "RECEVIE_SNACKS";
 
 
 export const addSnack = snack => dispatch => (
@@ -14,7 +15,23 @@ export const addSnack = snack => dispatch => (
   )
 );
 
+export const requestSnacks = () => dispatch => (
+  APIUtil.fetchSnacks().then(
+    snacks => {
+      dispatch(clearErrors());
+      return dispatch(receiveSnacks(snacks));
+    },
+    err => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
+
 export const receiveSnack = snack => ({
   type: RECEIVE_SNACK,
   snack
+});
+
+export const receiveSnacks = snacks => ({
+  type: RECEIVE_SNACKS,
+  snacks
 });
