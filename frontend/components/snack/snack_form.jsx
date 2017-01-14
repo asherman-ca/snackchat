@@ -10,6 +10,8 @@ class SnackForm extends React.Component {
       picture_url: '',
       description: ''
     };
+
+    this.snackAdd = this.snackAdd.bind(this);
   }
 
   snackAdd(e) {

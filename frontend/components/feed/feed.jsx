@@ -10,7 +10,9 @@ class Feed extends React.Component {
     return (
       <div className='feed'>
         <div className='feed-content'>
-        
+          <div className='feed-title'>
+            <h1>Recent Activity</h1>
+          </div>
         </div>
       </div>
     );

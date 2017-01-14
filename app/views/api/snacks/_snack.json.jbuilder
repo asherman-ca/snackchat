@@ -1,1 +1,1 @@
-json.extract! snack, :name, :description, :picture_url
+json.extract! snack, :name, :description, :picture_url, :id
