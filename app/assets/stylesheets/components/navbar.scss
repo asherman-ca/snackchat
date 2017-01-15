@@ -42,7 +42,12 @@ $line-height: 10vh;
 
 .navbar-logo {
  width: 12vh;
+ transition: 0.5s;
  // padding-left: 10px;
+}
+
+.navbar-logo:hover {
+  padding-right: 15px;
 }
 
 .navbar-buttons {
