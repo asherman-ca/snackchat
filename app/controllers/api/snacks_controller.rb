@@ -22,6 +22,11 @@ class Api::SnacksController < ApplicationController
     @snacks = current_user.snacks
   end
 
+  def destroy
+    @snack = Snack.find(params[:id])
+    @snack.destroy 
+  end
+
   private
 
   def snack_params

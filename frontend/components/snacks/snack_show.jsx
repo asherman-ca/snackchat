@@ -15,7 +15,8 @@ class SnackShow extends React.Component {
 
   handleDelete(e) {
     e.preventDefault();
-    this.props.deleteDrink(this.props.params.drinkId);
+    this.props.deleteSnack(this.props.params.snackId).then(
+      () => this.props.router.replace('/profile'));
     // this.props.fetchRatings({
     //   type: "drink",
     //   id: this.props.params.drinkId,
@@ -39,8 +40,8 @@ class SnackShow extends React.Component {
               <div className="show-index-title">
                 <p>{ snack.name }</p>
               </div>
-              <div className="show-index-button">
-                <p onClick = {this.handleClick}>Delete</p>
+              <div onClick = {this.handleDelete} className="show-index-button">
+                <p >Delete</p>
               </div>
             </div>
           </div>

@@ -19,3 +19,10 @@ export const addSnack = snack => (
     data: {snack}
   })
 );
+
+export const deleteSnack = id => (
+  $.ajax({
+    method: 'DELETE',
+    url: `/api/snacks/${id}`,
+  })
+);
