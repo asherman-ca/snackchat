@@ -12,8 +12,7 @@ class Profile extends React.Component {
     return (
       <div className='profile'>
         <div className='profile-content'>
-            <h1 className='profile-title'>{this.props.username}</h1>
-            <SnacksIndexContainer />
+            <SnacksIndexContainer  />
         </div>
       </div>
     );
@@ -21,3 +20,6 @@ class Profile extends React.Component {
 }
 
 export default withRouter(Profile);
+
+
+// <h1 className='profile-title'>{this.props.username}</h1>

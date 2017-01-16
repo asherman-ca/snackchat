@@ -7,10 +7,10 @@ import SessionFormContainer from './session_form/session_form_container';
 import FeedContainer from './feed/feed_container';
 import SnackFormContainer from './snacks/snack_form_container';
 import ProfileContainer from './profile/profile_container';
+import SnackShowContainer from './snacks/snack_show_container';
 // import SnackContainer from './snacks/snack_container';
   // <Route path='/snacks/:id' component={ SnackContainer } />
 import { clearErrors, removeErrors } from '../actions/error_actions';
-
 
 const Root = ({ store }) => {
 
@@ -39,10 +39,11 @@ const Root = ({ store }) => {
         </Route>
 
         <Route path="/browse" component={ AppContainer }>
-          <IndexRoute component={ FeedContainer }/>
+          <IndexRoute component={ ProfileContainer }/>
           <Route path='/feed' component={ FeedContainer } />
           <Route path='/add' component={ SnackFormContainer } />
           <Route path='/profile' component={ ProfileContainer } />
+          <Route path='/snacks/:snackId' component={ SnackShowContainer } />
         </Route>
 
       </Route>

@@ -24,7 +24,7 @@ class SnackIndexItem extends React.Component {
           <p>{ name }</p>
         </div>
         <div className="snack-index-rating">
-          <p>Rating</p>
+          <p>Delete</p>
         </div>
       </div>
     );

@@ -17,7 +17,7 @@ class SnackForm extends React.Component {
   snackAdd(e) {
     e.preventDefault();
     this.props.addSnack(this.state).then(
-      () => this.props.router.replace('/browse'));
+      () => this.props.router.replace('/profile'));
   }
 
   update(field) {
