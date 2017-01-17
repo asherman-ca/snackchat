@@ -25,6 +25,16 @@ export const requestUserSnacks = (id) => dispatch => (
   )
 );
 
+export const requestSnacks = () => dispatch => (
+  APIUtil.fetchSnacks().then(
+    snacks => {
+      dispatch(clearErrors());
+      return dispatch(receiveSnacks(snacks));
+    },
+    err => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
 export const deleteSnack = (id) => dispatch => (
   APIUtil.deleteSnack(id).then(
     res => {

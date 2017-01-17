@@ -16,7 +16,7 @@ class SnackShow extends React.Component {
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(
-      () => this.props.router.replace('/profile'));
+      () => this.props.router.replace('/profile/'));
     // this.props.fetchRatings({
     //   type: "drink",
     //   id: this.props.params.drinkId,

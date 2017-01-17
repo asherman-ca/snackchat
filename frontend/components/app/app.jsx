@@ -43,7 +43,7 @@ class App extends React.Component {
                   <span>Share</span>
                 </Link>
               </div>
-              <div className='navbar-button btn-hidden'>
+              <div className='navbar-button'>
                 <Link to='/feed'>
                   <span>Snacks</span>
                 </Link>
