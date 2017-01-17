@@ -16,24 +16,28 @@ class App extends React.Component {
     this._redirectLoggedOut();
   }
 
-  componentDidUpdate() {
-    this._redirectLoggedOut();
+  componentWillReceiveProps(newProps) {
+    if(!newProps.loggedIn){
+      this.props.router.replace('/');
+    }
   }
 
-  handleClick(e) {
-    e.preventDefault();
-    this.props.router.replace(`/profile/${this.props.user.id}`);
+  showNavLink(){
+    const user = this.props.user;
+    if (user) {
+      return <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>;
+    }
   }
 
   render(){
-    const user = this.props.user;
+
     return (
       <div className='browse-sidebars'>
         <div className='browse-content'>
           <div className='navbar'>
             <div className='navbar-profile'>
-            <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>
-          </div>
+              {this.showNavLink()}
+            </div>
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
