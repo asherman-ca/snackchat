@@ -9,9 +9,11 @@ class Feed extends React.Component {
   render() {
     return (
       <div className='feed'>
-        <div className='feed-content'>
-          <div className='feed-title'>
-            <h1>Recent Activity</h1>
+        <div className='feed-index-container'>
+          <div className='feed-index-item'>
+            <div className='feed-index-title'>
+              <h1>Recent Activity</h1>
+            </div>
           </div>
         </div>
       </div>

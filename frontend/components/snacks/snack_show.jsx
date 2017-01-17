@@ -38,7 +38,7 @@ class SnackShow extends React.Component {
                 <img src={ snack.picture_url } />
               </div>
               <div className="show-index-title">
-                <p>{ snack.name }</p>
+                <p>{ snack.name }</p><p className="credit">from Super Duper Burger</p>
               </div>
               <div onClick = {this.handleDelete} className="show-index-button">
                 <p >Delete</p>

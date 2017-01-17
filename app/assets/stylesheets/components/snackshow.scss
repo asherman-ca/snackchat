@@ -6,31 +6,32 @@
 }
 
 .show-content {
-  margin-top: 5vh;
-  height: 100%;
-  width: 95%;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 5px;
-  border-radius: 5px;
-  color: rgb(147,16,9);
+  // margin-top: 5vh;
+  // height: 100%;
+  // width: 95%;
+  // background: rgba(255, 255, 255, 0.5);
+  // padding: 5px;
+  // border-radius: 5px;
+  // color: rgb(147,16,9);
   // text-align: center;
   // display: flex;
   // flex-direction: column;
 }
 
 .show-index-container {
-  margin: 2%;
+  width: 95%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   display: flex;
-  // flex-direction: column;
   flex-wrap: wrap;
-  // margin-top: 1vh;
-  height: 100%;
-  width: 94%;
-  // padding: 20px;
+  align-content: flex-start;
+  height: 80vh;
   border-radius: 5px;
   color: rgb(147,16,9);
-  font-size: 3em;
-  // padding-bottom: 80px;
 }
 
 .show-index-item {
@@ -42,32 +43,60 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: .5s;
+  border: 5px #1b1d1f;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
   // vertical-align: middle;
 }
 
 .show-index-image {
-  min-width: 33.33%;
-  border-radius: 5px;
+  min-width: 25%;
+  // border-radius: 5px;
   display: flex;
   vertical-align: middle;
 
   img {
-    width: 60%;
+    width: 100%;
+    border-radius: 1px;
   }
 }
 
 .show-index-title {
-  min-width: 33.33%;
+  min-width: 50%;
   display: flex;
   vertical-align: middle;
   justify-content: center;
+  flex-wrap: wrap;
   line-height: 15vh;
+  font-size: 2em;
+  padding-top: 2vh;
+  color: #1b1d1f;
+
+  p {
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+  }
+
+}
+
+.credit {
+  font-size: .8em;
+
 }
 
 .show-index-button {
-  min-width: 33.333%;
+  min-width: 25%;
   display: flex;
   vertical-align: middle;
   justify-content: center;
   line-height: 15vh;
+  transition: .5s;
+  font-size: 2em;
+}
+
+.show-index-button:hover {
+  cursor: pointer;
+  font-size: 2.5em;
 }
