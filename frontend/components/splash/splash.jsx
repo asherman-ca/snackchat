@@ -21,7 +21,8 @@ class Splash extends React.Component {
 
   _redirectLoggedIn() {
     if(this.props.loggedIn) {
-      this.props.router.replace('/browse/');
+      let url = `/profile/${this.props.user.id}`;
+      this.props.router.replace(url);
     }
   }
 

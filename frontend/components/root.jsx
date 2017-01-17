@@ -17,7 +17,7 @@ const Root = ({ store }) => {
 
   const _redirect = (nextState, replace) => {
     if(store.getState().session.currentUser) {
-      replace('/browse');
+      replace(`/profile/${store.getState().session.currentUser.id}`);
     } else {
       replace('/login');
     }
@@ -40,7 +40,6 @@ const Root = ({ store }) => {
         </Route>
 
         <Route path="/browse" component={ AppContainer }>
-          <IndexRoute component={ FeedContainer }/>
           <Route path='/feed' component={ FeedContainer }/>
           <Route path='/add' component={ SnackFormContainer }/>
           <Route path='/profile/:userId' component={ SnacksIndexContainer }/>
