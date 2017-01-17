@@ -21,12 +21,13 @@ class App extends React.Component {
   }
 
   render(){
+    const user = this.props.user;
     return (
       <div className='browse-sidebars'>
         <div className='browse-content'>
           <div className='navbar'>
-            <div className='navbar-logo'>
-              <Link to='/profile'><img src="http://res.cloudinary.com/devwor0u0/image/upload/v1484180645/SnackChat_hwfh0w.png"/></Link>
+            <div className='navbar-profile'>
+              <Link to={`/profile/${user.id}`}><p>{user.username}</p></Link>
             </div>
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>

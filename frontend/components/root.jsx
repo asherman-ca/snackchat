@@ -42,7 +42,7 @@ const Root = ({ store }) => {
           <IndexRoute component={ FeedContainer }/>
           <Route path='/feed' component={ FeedContainer } />
           <Route path='/add' component={ SnackFormContainer } />
-          <Route path='/profile' component={ ProfileContainer } />
+          <Route path='/profile/:userId' component={ ProfileContainer } />
           <Route path='/snacks/:snackId' component={ SnackShowContainer } />
         </Route>
 

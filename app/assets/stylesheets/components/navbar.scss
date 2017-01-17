@@ -37,6 +37,27 @@ $line-height: 10vh;
  }
 }
 
+.navbar-profile {
+  padding-right: 10%;
+  min-width: 33.33%;
+  height: $line-height;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  transition: 0.5s;
+  justify-content: center;
+  color: rgb(147,16,9);
+
+  p {
+    transition: .5s;
+    font-size: 2em;
+  }
+
+  p:hover {
+    font-size: 2.5em;
+  }
+}
+
 .navbar-header {
   display: flex;
   justify-content: center;

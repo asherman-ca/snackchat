@@ -19,10 +19,15 @@ class Api::SnacksController < ApplicationController
   end
 
   def index
-    @snacks = current_user.snacks
 
+    if params[:id]
+      @snacks = User.find(params[:id]).snacks
+    else
+      @snacks = Snack.all
+    end
+
+    # @snacks = current_user.snacks
     # @snacks = User.find(params[:id]).snacks
-
   end
 
   def destroy
