@@ -44,6 +44,11 @@ class SnackShow extends React.Component {
                 <p >Delete</p>
               </div>
             </div>
+            <div className="show-index-item">
+              <div className="show-index-rating-button">
+                <p >Rate Me!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

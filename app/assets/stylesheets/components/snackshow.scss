@@ -100,3 +100,18 @@
   cursor: pointer;
   font-size: 2.5em;
 }
+
+.show-index-rating-button {
+  min-width: 100%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  line-height: 15vh;
+  transition: .5s;
+  font-size: 2em;
+}
+
+.show-index-rating-button:hover {
+  cursor: pointer;
+  font-size: 2.5em;
+}

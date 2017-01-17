@@ -43,7 +43,7 @@ class SnackForm extends React.Component {
         <form onSubmit={this.snackAdd} className='snackform'>
 
           <label htmlFor='name' className='snackform-label'>
-            { "Name" }
+            { "Snack" }
           </label>
 
           <input name='name'
@@ -61,7 +61,7 @@ class SnackForm extends React.Component {
                 className='snackform-input'></input>
 
         <label htmlFor='description' className='snackform-label'>
-            { "Description" }
+            { "Restaurant" }
         </label>
 
         <input name='description'
