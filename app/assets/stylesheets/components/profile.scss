@@ -42,6 +42,10 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
+  border: 4px rgb(147,16,9);
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+
   // vertical-align: middle;
 }
 
@@ -51,20 +55,20 @@
 }
 
 .snack-index-image {
-  min-width: 33.33%;
+  min-width: 25%;
   // border-radius: 5px;
   display: flex;
   vertical-align: middle;
 
   img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 1px;
   }
 }
 
 .snack-index-title {
   // margin-left: 33.33%;
-  min-width: 66.66%;
+  min-width: 75%;
   display: flex;
   vertical-align: middle;
   justify-content: center;
