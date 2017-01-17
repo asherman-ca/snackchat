@@ -7,11 +7,11 @@ class SnackShow extends React.Component {
     this.handleDelete = this.handleDelete.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.props.fetchSnack({
-  //     id: this.props.params.snackId
-  //   });
-  // }
+  componentDidMount() {
+    this.props.fetchSnack(
+      this.props.params.snackId
+    );
+  }
 
   handleDelete(e) {
     e.preventDefault();

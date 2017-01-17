@@ -39,7 +39,7 @@ const Root = ({ store }) => {
         </Route>
 
         <Route path="/browse" component={ AppContainer }>
-          <IndexRoute component={ ProfileContainer }/>
+          <IndexRoute component={ FeedContainer }/>
           <Route path='/feed' component={ FeedContainer } />
           <Route path='/add' component={ SnackFormContainer } />
           <Route path='/profile' component={ ProfileContainer } />

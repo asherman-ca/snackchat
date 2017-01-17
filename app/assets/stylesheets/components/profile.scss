@@ -41,8 +41,8 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
-  border: 5px #1b1d1f;
-  border-style: solid;
+  // border: 5px #1b1d1f;
+  // border-style: solid;
   box-shadow: 10px 10px 5px #888888;
 
   // vertical-align: middle;
@@ -59,15 +59,18 @@
   display: flex;
   vertical-align: middle;
 
+
   img {
     width: 100%;
-    border-radius: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: solid 4px #1b1d1f;
   }
 }
 
 .snack-index-title {
   // margin-left: 33.33%;
-  border-left: solid 5px #1b1d1f;
+
   min-width: 75%;
   display: flex;
   vertical-align: middle;

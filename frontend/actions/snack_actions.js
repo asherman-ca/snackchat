@@ -35,6 +35,16 @@ export const deleteSnack = (id) => dispatch => (
   )
 );
 
+export const fetchSnack = (id) => dispatch => (
+  APIUtil.fetchSnack(id).then(
+    snack => {
+      dispatch(clearErrors());
+      return dispatch(receiveSnack(snack));
+    },
+    err => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
 export const removeSnack = (id) => ({
   type: REMOVE_SNACK,
   id

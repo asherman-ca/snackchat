@@ -65,12 +65,15 @@ $line-height: 10vh;
 
 .navbar-buttons {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
   min-width: 33.33%;
+  line-height: $line-height;
 
   .navbar-button {
     // margin: 0 15px;
-    width: 80px;
+    width: 30%;
+
 
     a {
       // display: block;
@@ -78,13 +81,15 @@ $line-height: 10vh;
       border-radius: 2px;
       // border: 1px solid #000000;
       // padding: 5px 8px;
-      width: 90px;
+      width: 100%;
       text-align: center;
-      background: rgb(147,16,9);
+      color: rgb(147,16,9);
+      // background: rgb(147,16,9);
       // box-shadow: 2px 2px 2px #000000;
 
       span {
         cursor: pointer;
+        font-size: 2em;
         // display: inline-block;
         // position: relative;
         transition: 0.5s;
@@ -93,10 +98,10 @@ $line-height: 10vh;
     }
 
     a:hover {
-      background: #000000;
+      // background: #000000;
 
       span {
-        padding-right: 15px;
+        font-size: 2.5em;
       }
 
       span:after {
@@ -105,11 +110,11 @@ $line-height: 10vh;
       }
     }
 
-    a:active {
-      background: rgb(147,16,9);
-      box-shadow: none;
-      transform: translateY(2px);
-    }
+    // a:active {
+    //   background: rgb(147,16,9);
+    //   box-shadow: none;
+    //   transform: translateY(2px);
+    // }
 
   }
 
