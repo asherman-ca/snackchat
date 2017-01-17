@@ -48,13 +48,13 @@ $line-height: 10vh;
   justify-content: center;
   color: rgb(147,16,9);
 
-  p {
+  .nav-link {
     transition: .5s;
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
-  p:hover {
-    font-size: 2.5em;
+  .nav-link:hover {
+    font-size: 3em;
   }
 }
 

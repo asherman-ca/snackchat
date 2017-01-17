@@ -6,7 +6,7 @@ import { deleteSnack, fetchSnack }
 //   from '../../actions/rating_actions';
 
 const mapStateToProps = (state, ownProps) => ({
-  snack: state.snacks[ownProps.params.snackId]
+  snack: state.snacks[ownProps.params.snackId],
 });
 
 const mapDispatchToProps = dispatch => ({

@@ -27,7 +27,7 @@ class App extends React.Component {
         <div className='browse-content'>
           <div className='navbar'>
             <div className='navbar-profile'>
-              <Link to={`/profile/${user.id}`}><p>{user.username}</p></Link>
+              <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>
             </div>
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>

@@ -8,6 +8,7 @@ import FeedContainer from './feed/feed_container';
 import SnackFormContainer from './snacks/snack_form_container';
 import ProfileContainer from './profile/profile_container';
 import SnackShowContainer from './snacks/snack_show_container';
+import SnacksIndexContainer from './snacks/snacks_index_container';
 // import SnackContainer from './snacks/snack_container';
   // <Route path='/snacks/:id' component={ SnackContainer } />
 import { clearErrors, removeErrors } from '../actions/error_actions';
@@ -40,10 +41,10 @@ const Root = ({ store }) => {
 
         <Route path="/browse" component={ AppContainer }>
           <IndexRoute component={ FeedContainer }/>
-          <Route path='/feed' component={ FeedContainer } />
-          <Route path='/add' component={ SnackFormContainer } />
-          <Route path='/profile/:userId' component={ ProfileContainer } />
-          <Route path='/snacks/:snackId' component={ SnackShowContainer } />
+          <Route path='/feed' component={ FeedContainer }/>
+          <Route path='/add' component={ SnackFormContainer }/>
+          <Route path='/profile/:userId' component={ SnacksIndexContainer }/>
+          <Route path='/snacks/:snackId' component={ SnackShowContainer }/>
         </Route>
 
       </Route>

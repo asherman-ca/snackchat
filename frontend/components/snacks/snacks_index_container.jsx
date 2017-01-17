@@ -1,14 +1,16 @@
 import { connect } from 'react-redux';
 import SnacksIndex from './snacks_index';
-import { requestSnacks } from '../../actions/snack_actions';
+import { requestSnacks, requestUserSnacks } from '../../actions/snack_actions';
 import { selectAllSnacks } from '../../reducers/selectors';
 
-const mapStateToProps = state => ({
-  snacks: selectAllSnacks(state).slice().reverse()
+const mapStateToProps = (state, { routeParams } ) => ({
+  snacks: selectAllSnacks(state).slice().reverse(),
+  id: routeParams.userId
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestSnacks: () => dispatch(requestSnacks())
+  requestUserSnacks: (id) => dispatch(requestUserSnacks(id))
+    // requestSnacks: () => dispatch(requestSnacks())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SnacksIndex);

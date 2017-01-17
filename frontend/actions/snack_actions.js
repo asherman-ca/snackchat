@@ -15,8 +15,8 @@ export const addSnack = snack => dispatch => (
   )
 );
 
-export const requestSnacks = () => dispatch => (
-  APIUtil.fetchSnacks().then(
+export const requestUserSnacks = (id) => dispatch => (
+  APIUtil.fetchUserSnacks(id).then(
     snacks => {
       dispatch(clearErrors());
       return dispatch(receiveSnacks(snacks));
