@@ -20,6 +20,11 @@ class App extends React.Component {
     this._redirectLoggedOut();
   }
 
+  handleClick(e) {
+    e.preventDefault();
+    this.props.router.replace(`/profile/${this.props.user.id}`);
+  }
+
   render(){
     const user = this.props.user;
     return (
@@ -27,8 +32,8 @@ class App extends React.Component {
         <div className='browse-content'>
           <div className='navbar'>
             <div className='navbar-profile'>
-              <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>
-            </div>
+            <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>
+          </div>
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
