@@ -29,7 +29,6 @@
   // padding: 20px;
   border-radius: 5px;
   color: rgb(147,16,9);
-  font-size: 3em;
   // padding-bottom: 80px;
 }
 
@@ -53,21 +52,38 @@
 
 .snack-index-image {
   min-width: 33.33%;
-  border-radius: 5px;
+  // border-radius: 5px;
   display: flex;
   vertical-align: middle;
 
   img {
-    width: 60%;
+    width: 100%;
+    border-radius: 5px;
   }
 }
 
 .snack-index-title {
-  min-width: 33.33%;
+  // margin-left: 33.33%;
+  min-width: 66.66%;
   display: flex;
   vertical-align: middle;
   justify-content: center;
+  flex-wrap: wrap;
   line-height: 15vh;
+  font-size: 2em;
+  padding-top: 2vh;
+
+  p {
+    width: 100%;
+    line-height: normal;
+    text-align: center;
+  }
+
+}
+
+.credit {
+  font-size: .8em;
+
 }
 
 .snack-index-rating {
