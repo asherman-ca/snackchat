@@ -8,18 +8,47 @@ $line-height: 10vh;
   color: #dddddd;
 }
 
+// .navbar-logo-container {
+//   display: flex;
+//   vertical-align: middle;
+//   align-items: center;
+//   min-width: 33.33%;
+//   height: $line-height;
+// }
+
+.navbar-logo {
+ min-width: 33.33%;
+ height: $line-height;
+ display: flex;
+ vertical-align: middle;
+ align-items: center;
+ transition: 0.5s;
+ justify-content: center;
+
+ // padding-left: 40px;
+ img {
+   width: 7vw;
+   transition: .5s;
+ }
+
+ img:hover {
+   width: 8vw;
+ }
+}
+
 .navbar-header {
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  // padding-top: 5px;
+  min-width: 33.33%;
 }
 
 .navbar-header h1 {
   line-height: $line-height;
-  display: block;
+  // display: block;
   // line-height: 5vh;
-  margin-left: 15px;
-  padding-left: 12vw;
+  // margin-left: 15px;
+  // padding-left: 12vw;
   font-size: 3em;
   color: rgb(147,16,9);
 }
@@ -27,43 +56,28 @@ $line-height: 10vh;
 .navbar-header p {
   line-height: $line-height;
   text-decoration: underline;
-  display: block;
-  margin-left: 15px;
+  // display: block;
+  // margin-left: 15px;
   // padding-left: 12vw;
   font-size: 2em;
   color: rgb(147,16,9);
 }
 
-.navbar-logo-container {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-}
-
-.navbar-logo {
- width: 12vh;
- transition: 0.5s;
- // padding-left: 10px;
-}
-
-.navbar-logo:hover {
-  padding-right: 15px;
-}
-
 .navbar-buttons {
   display: flex;
   align-items: center;
+  min-width: 33.33%;
 
   .navbar-button {
-    margin: 0 15px;
-    // width: 80px;
+    // margin: 0 15px;
+    width: 80px;
 
     a {
-      display: block;
-      margin: 0 auto;
+      // display: block;
+      // margin: 0 auto;
       border-radius: 2px;
       // border: 1px solid #000000;
-      padding: 5px 8px;
+      // padding: 5px 8px;
       width: 90px;
       text-align: center;
       background: rgb(147,16,9);
@@ -71,8 +85,8 @@ $line-height: 10vh;
 
       span {
         cursor: pointer;
-        display: inline-block;
-        position: relative;
+        // display: inline-block;
+        // position: relative;
         transition: 0.5s;
       }
 
@@ -100,3 +114,108 @@ $line-height: 10vh;
   }
 
 }
+
+
+
+// $line-height: 10vh;
+//
+// .navbar {
+//   height: $line-height;
+//   display: flex;
+//   justify-content: space-around;
+//   background: rgba(255, 255, 255, 1);
+//   color: #dddddd;
+// }
+//
+// .navbar-logo-container {
+//   display: flex;
+//   vertical-align: middle;
+//   align-items: center;
+// }
+//
+// .navbar-logo {
+//  width: 12vh;
+//  transition: 0.5s;
+//  // padding-left: 10px;
+// }
+//
+// .navbar-logo:hover {
+//   padding-right: 15px;
+// }
+//
+// .navbar-header {
+//   display: flex;
+//   justify-content: center;
+//   padding-top: 5px;
+// }
+//
+// .navbar-header h1 {
+//   line-height: $line-height;
+//   display: block;
+//   // line-height: 5vh;
+//   margin-left: 15px;
+//   padding-left: 12vw;
+//   font-size: 3em;
+//   color: rgb(147,16,9);
+// }
+//
+// .navbar-header p {
+//   line-height: $line-height;
+//   text-decoration: underline;
+//   display: block;
+//   margin-left: 15px;
+//   // padding-left: 12vw;
+//   font-size: 2em;
+//   color: rgb(147,16,9);
+// }
+//
+// .navbar-buttons {
+//   display: flex;
+//   align-items: center;
+//
+//   .navbar-button {
+//     margin: 0 15px;
+//     // width: 80px;
+//
+//     a {
+//       display: block;
+//       margin: 0 auto;
+//       border-radius: 2px;
+//       // border: 1px solid #000000;
+//       padding: 5px 8px;
+//       width: 90px;
+//       text-align: center;
+//       background: rgb(147,16,9);
+//       // box-shadow: 2px 2px 2px #000000;
+//
+//       span {
+//         cursor: pointer;
+//         display: inline-block;
+//         position: relative;
+//         transition: 0.5s;
+//       }
+//
+//     }
+//
+//     a:hover {
+//       background: #000000;
+//
+//       span {
+//         padding-right: 15px;
+//       }
+//
+//       span:after {
+//         opacity: 1;
+//         right: 0;
+//       }
+//     }
+//
+//     a:active {
+//       background: rgb(147,16,9);
+//       box-shadow: none;
+//       transform: translateY(2px);
+//     }
+//
+//   }
+//
+// }
