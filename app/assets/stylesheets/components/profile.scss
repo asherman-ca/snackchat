@@ -41,7 +41,7 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
-  border: 4px rgb(147,16,9);
+  border: 5px #1b1d1f;
   border-style: solid;
   box-shadow: 10px 10px 5px #888888;
 
@@ -75,6 +75,7 @@
   line-height: 15vh;
   font-size: 2em;
   padding-top: 2vh;
+  color: #1b1d1f;
 
   p {
     width: 100%;
