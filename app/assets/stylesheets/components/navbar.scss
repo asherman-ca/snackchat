@@ -17,6 +17,7 @@ $line-height: 10vh;
 // }
 
 .navbar-logo {
+ padding-right: 5%;
  min-width: 33.33%;
  height: $line-height;
  display: flex;
@@ -49,11 +50,13 @@ $line-height: 10vh;
   // line-height: 5vh;
   // margin-left: 15px;
   // padding-left: 12vw;
+  padding-right: .5vw;
   font-size: 3em;
   color: rgb(147,16,9);
 }
 
 .navbar-header p {
+  padding-left: .5vw;
   line-height: $line-height;
   text-decoration: underline;
   // display: block;
@@ -64,6 +67,7 @@ $line-height: 10vh;
 }
 
 .navbar-buttons {
+  padding-left: 5%;
   display: flex;
   justify-content: center;
   vertical-align: middle;

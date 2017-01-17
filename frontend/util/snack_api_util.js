@@ -26,3 +26,11 @@ export const deleteSnack = id => (
     url: `/api/snacks/${id}`,
   })
 );
+
+export const fetchUserSnacks = (id) => (
+  $.ajax({
+    method: 'GET',
+    url: '/api/snacks',
+    data: {id}
+  })
+);
