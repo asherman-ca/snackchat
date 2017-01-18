@@ -10,7 +10,6 @@ const mapStateToProps = (state, { routeParams } ) => ({
 
 const mapDispatchToProps = dispatch => ({
   requestUserSnacks: (id) => dispatch(requestUserSnacks(id))
-    // requestSnacks: () => dispatch(requestSnacks())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SnacksIndex);

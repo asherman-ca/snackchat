@@ -11,6 +11,9 @@ class SnackShow extends React.Component {
     this.props.fetchSnack(
       this.props.params.snackId
     );
+    this.props.fetchSnackRatings(
+      this.props.params.snackId
+    );
   }
 
   handleDelete(e) {
