@@ -38,7 +38,7 @@ $line-height: 10vh;
 }
 
 .navbar-profile {
-  padding-right: 10%;
+  // padding-right: 10%;
   min-width: 33.33%;
   height: $line-height;
   display: flex;
@@ -51,6 +51,10 @@ $line-height: 10vh;
   .nav-link {
     transition: .5s;
     font-size: 3em;
+  }
+
+  .add-snack {
+    padding-left: 1vw;
   }
 
   .nav-link:hover {
