@@ -1,5 +1,17 @@
+@keyframes slideOut {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
 .snackform {
-  display: block;
+  // display: block;
   width: 20vw;
   background: rgba(255, 255, 255, 0.5);
   padding: 20px;
@@ -8,6 +20,12 @@
   position: absolute;
   top: 20vh;
   left: 40vw;
+
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .snackform-input {
