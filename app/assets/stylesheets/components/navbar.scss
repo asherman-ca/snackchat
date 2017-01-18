@@ -74,6 +74,11 @@ $line-height: 10vh;
   padding-right: .5vw;
   font-size: 3em;
   color: rgb(147,16,9);
+  transition: .5s;
+}
+
+.navbar-header h1:hover {
+  font-size: 3.3em;
 }
 
 .navbar-header p {
@@ -85,6 +90,7 @@ $line-height: 10vh;
   // padding-left: 12vw;
   font-size: 1.5em;
   color: rgb(147,16,9);
+  transition: .5s;
 }
 
 .navbar-buttons {
