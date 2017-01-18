@@ -36,7 +36,7 @@ class App extends React.Component {
         <div className='browse-content'>
           <div className='navbar'>
             <div className='navbar-profile'>
-              {this.showNavLink()}
+              {this.showNavLink()} <p>Snacks</p>
             </div>
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>
@@ -44,7 +44,7 @@ class App extends React.Component {
             <div className='navbar-buttons'>
               <div className='navbar-button'>
                 <Link to='/add'>
-                  <span>Share</span>
+                  <span>Add</span><p>Snack</p>
                 </Link>
               </div>
               <div className='navbar-button'>

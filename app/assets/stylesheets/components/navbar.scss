@@ -50,27 +50,31 @@ $line-height: 10vh;
 
   .nav-link {
     transition: .5s;
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .nav-link:hover {
-    font-size: 3em;
+    font-size: 3.3em;
+  }
+
+  p {
+    padding-left: .5vw;
+    line-height: $line-height;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: rgb(147,16,9);
+    transition: .5s;
   }
 }
 
 .navbar-header {
   display: flex;
   justify-content: center;
-  // padding-top: 5px;
   min-width: 33.33%;
 }
 
 .navbar-header h1 {
   line-height: $line-height;
-  // display: block;
-  // line-height: 5vh;
-  // margin-left: 15px;
-  // padding-left: 12vw;
   padding-right: .5vw;
   font-size: 3em;
   color: rgb(147,16,9);
@@ -85,9 +89,6 @@ $line-height: 10vh;
   padding-left: .5vw;
   line-height: $line-height;
   text-decoration: underline;
-  // display: block;
-  // margin-left: 15px;
-  // padding-left: 12vw;
   font-size: 1.5em;
   color: rgb(147,16,9);
   transition: .5s;
@@ -102,51 +103,54 @@ $line-height: 10vh;
   line-height: $line-height;
 
   .navbar-button {
-    // margin: 0 15px;
     width: 30%;
-
     a {
-      // display: block;
-      // margin: 0 auto;
-      border-radius: 2px;
-      // border: 1px solid #000000;
-      // padding: 5px 8px;
       width: 100%;
-      text-align: center;
-      color: rgb(147,16,9);
-      // background: rgb(147,16,9);
-      // box-shadow: 2px 2px 2px #000000;
-
       span {
+        font-size: 1.5em;
+        color: rgb(147,16,9);
+        // width: 100%;
+        text-align: center;
         cursor: pointer;
-        font-size: 2em;
-        // display: inline-block;
-        // position: relative;
         transition: 0.5s;
       }
+      p {
+        padding-left: .5vw;
+        // line-height: $line-height;
+        text-decoration: underline;
+        font-size: 1em;
+        color: rgb(147,16,9);
+        transition: .5s;
+       }
     }
-
-    a:hover {
-      // background: #000000;
-
-      span {
-        font-size: 2.2em;
-      }
-
-      span:after {
-        opacity: 1;
-        right: 0;
+    a {
+      span:hover {
+        font-size: 1.6em;
       }
     }
-
-    // a:active {
-    //   background: rgb(147,16,9);
-    //   box-shadow: none;
-    //   transform: translateY(2px);
-    // }
-
   }
 }
+
+// .navbar-button-add{
+//   p {
+//     padding-left: .5vw;
+//     line-height: $line-height;
+//     text-decoration: underline;
+//     font-size: 1.5em;
+//     color: rgb(147,16,9);
+//     transition: .5s;
+//   }
+// }
+
+// .navbar-button-add{
+//   font-size: 1em;
+// }
+//
+// .navbar-button-add:hover{
+//   font-size: 1.1em;
+// }
+
+
 
 
 
