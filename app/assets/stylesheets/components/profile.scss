@@ -20,14 +20,15 @@
   padding: 5px;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  // margin-bottom: 5vh;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 80vh;
-  border-radius: 5px;
+  height: 85vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   color: rgb(147,16,9);
 }
 
@@ -43,7 +44,8 @@
   transition: .5s;
   border: 5px rgb(147,16,9);
   border-style: groove;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 8px 8px 1px #888888;
+  text-shadow: 1px 1px 1px #888888;
 
   // vertical-align: middle;
 }
@@ -51,7 +53,7 @@
 .snack-index-item:hover {
   margin-top: 0%;
   cursor: pointer;
-  box-shadow: 6px 6px 3px #888888;
+  box-shadow: 2px 2px 1px #888888;
 }
 
 .snack-index-image {

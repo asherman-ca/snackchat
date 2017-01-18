@@ -6,6 +6,7 @@ $line-height: 10vh;
   justify-content: space-around;
   background: rgba(255, 255, 255, 1);
   color: #dddddd;
+  text-shadow: 1px 1px 1px #888888;
 }
 
 // .navbar-logo-container {
@@ -59,6 +60,7 @@ $line-height: 10vh;
 
   .nav-link:hover {
     font-size: 3.3em;
+    text-shadow: 5px 5px 1px #888888;
   }
 
   p {
@@ -87,6 +89,7 @@ $line-height: 10vh;
 
 .navbar-header h1:hover {
   font-size: 3.3em;
+  text-shadow: 5px 5px 1px #888888;
 }
 
 .navbar-header p {
@@ -154,6 +157,7 @@ $line-height: 10vh;
 
   .nav-action:hover {
     font-size: 2.7em;
+    text-shadow: 5px 5px 1px #888888;
   }
 
   p {
