@@ -39,18 +39,13 @@ class Splash extends React.Component {
               <h1><Link to='/'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
 
-            <div className='navbar-buttons'>
-              <div className='navbar-button btn-login'>
-                <Link to='/login'>
-                  <span>Login</span>
-                </Link>
-              </div>
-              <div className='navbar-button btn-signup'>
+            <div className='navbar-functions'>
+              <div className='nav-action'>
                 <Link to='/signup'>
                   <span>Signup</span>
                 </Link>
               </div>
-              <div className='navbar-button btn-demo'>
+              <div className='nav-action log-action'>
                 <a onClick={ () => this.props.login(demoUser) }>
                   <span>Demo</span>
                 </a>
