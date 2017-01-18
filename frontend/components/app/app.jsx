@@ -42,16 +42,14 @@ class App extends React.Component {
             <div className='navbar-header'>
               <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
-            <div className='navbar-buttons'>
-              <div className='navbar-button'>
+            <div className='navbar-functions'>
 
-              </div>
-              <div className='navbar-button'>
+              <div className='nav-action'>
                 <Link to='/feed'>
                   <span>Snacks</span>
                 </Link>
               </div>
-              <div className='navbar-button'>
+              <div className='nav-action log-action'>
                 <a onClick={ () => this.props.logout()}>
                   <span>Logout</span>
                 </a>

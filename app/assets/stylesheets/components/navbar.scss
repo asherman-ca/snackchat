@@ -135,6 +135,40 @@ $line-height: 10vh;
   }
 }
 
+.navbar-functions {
+  // padding-right: 10%;
+  min-width: 33.33%;
+  height: $line-height;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  transition: 0.5s;
+  justify-content: center;
+  color: rgb(147,16,9);
+
+  .nav-action {
+    transition: .5s;
+    font-size: 2.5em;
+  }
+
+  .nav-action:hover {
+    font-size: 2.7em;
+  }
+
+  p {
+    padding-left: .5vw;
+    line-height: $line-height;
+    text-decoration: underline;
+    font-size: 1.5em;
+    color: rgb(147,16,9);
+    transition: .5s;
+  }
+
+  .log-action {
+    margin-left: 2vw;
+  }
+}
+
 // .navbar-button-add{
 //   p {
 //     padding-left: .5vw;
