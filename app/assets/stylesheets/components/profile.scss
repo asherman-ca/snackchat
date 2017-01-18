@@ -13,18 +13,6 @@
 .snack-index {
   display: flex;
   justify-content: center;
-  // position: absolute;
-  // left: 40vw;
-}
-
-.profile-content {
-  // background: rgba(255, 255, 255, 0.5);
-  // padding: 5px;
-  // border-radius: 5px;
-  // color: rgb(147,16,9);
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .snack-index-container {
@@ -32,7 +20,6 @@
   padding: 5px;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 5vh;
-  // margin-bottom: 5vh;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: flex;
@@ -120,19 +107,3 @@
   justify-content: center;
   line-height: 15vh;
 }
-
-// .profile-title {
-//   margin-left: 3%;
-//   margin-right: 3%;
-//   margin-top: 2vh;
-//   height: 10vh;
-//   width: 94%;
-//   background: white;
-//   padding-left: 30px;
-//   padding-top: 10px;
-//   border-radius: 5px;
-//   color: rgb(147,16,9);
-//   text-align: center;
-//   font-size: 3em;
-//   // padding-bottom: 80px;
-// }

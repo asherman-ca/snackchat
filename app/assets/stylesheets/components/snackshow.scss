@@ -1,21 +1,18 @@
+@keyframes slideOut {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
 .show {
   display: flex;
   justify-content: center;
-  // position: absolute;
-  // left: 40vw;
-}
-
-.show-content {
-  // margin-top: 5vh;
-  // height: 100%;
-  // width: 95%;
-  // background: rgba(255, 255, 255, 0.5);
-  // padding: 5px;
-  // border-radius: 5px;
-  // color: rgb(147,16,9);
-  // text-align: center;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .show-index-container {
@@ -23,14 +20,14 @@
   padding: 5px;
   background: rgba(255, 255, 255, 0.5);
   margin-top: 5vh;
-  margin-bottom: 5vh;
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 80vh;
-  border-radius: 5px;
+  height: 85vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   color: rgb(147,16,9);
 }
 
@@ -44,31 +41,34 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
-  border: 5px rgb(147,16,9);
-  border-style: groove;
+  border: 9px solid rgb(147,16,9);
+  border-radius: 20px;
   box-shadow: 8px 8px 1px #888888;
   text-shadow: 1px 1px 1px #888888;
-  // vertical-align: middle;
+
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .show-index-image {
   min-width: 25%;
-  // border-radius: 5px;
   display: flex;
   vertical-align: middle;
+  border-right: 5px solid rgb(147,16,9);
 
   img {
     width: 100%;
-    // border-top-left-radius: 5px;
-    // border-bottom-left-radius: 5px;
-    border-right: 5px rgb(147,16,9);
-    border-style: groove;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, .3);
   }
 }
 
 .show-index-title {
-  // border-left: solid 5px #1b1d1f;
-  border-right: groove 5px rgb(147,16,9);
+  border-right: solid 5px rgb(147,16,9);
   min-width: 50%;
   display: flex;
   vertical-align: middle;
@@ -97,10 +97,14 @@
   display: flex;
   vertical-align: middle;
   justify-content: center;
+  align-items: center;
   line-height: 15vh;
   transition: .5s;
   font-size: 2em;
   color: #1b1d1f;
+  border: 3px solid rgba(0, 0, 0, .3);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .show-index-button:hover {
@@ -114,6 +118,9 @@
   display: flex;
   vertical-align: middle;
   justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, .3);
+  border-radius: 10px;
   line-height: 15vh;
   transition: .5s;
   font-size: 2em;
