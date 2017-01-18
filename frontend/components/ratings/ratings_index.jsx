@@ -19,7 +19,7 @@ class RatingsIndex extends React.Component {
       return (
         <div className="rating-index">
           <div className="rating-index-container">
-            {ratings.map(rating => <RatingIndexItem key={`rating${rating.id}`} rating={rating} />)}
+            {ratings.map(rating => <RatingIndexItem key={rating.id} rating={rating} />)}
           </div>
         </div>
       );
