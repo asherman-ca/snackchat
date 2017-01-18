@@ -11,7 +11,7 @@ class SnackShow extends React.Component {
     this.props.fetchSnack(
       this.props.params.snackId
     );
-    this.props.fetchSnackRatings(
+    this.props.requestSnackRatings(
       this.props.params.snackId
     );
   }
@@ -29,6 +29,7 @@ class SnackShow extends React.Component {
 
   render () {
     const snack = this.props.snack;
+    const ratings = this.props.ratings;
     if (!snack) {
       return <div>Loading...</div>;
     }
@@ -41,7 +42,7 @@ class SnackShow extends React.Component {
                 <img src={ snack.picture_url } />
               </div>
               <div className="show-index-title">
-                <p>{ snack.name }</p><p className="credit">from Super Duper Burger</p>
+                <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
               </div>
               <div onClick = {this.handleDelete} className="show-index-button">
                 <p >Delete</p>

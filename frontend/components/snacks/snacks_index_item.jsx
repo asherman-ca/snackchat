@@ -5,7 +5,6 @@ class SnackIndexItem extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    console.log(props);
   }
 
   handleClick() {
@@ -22,7 +21,7 @@ class SnackIndexItem extends React.Component {
           <img src={ picture_url } />
         </div>
         <div className="snack-index-title">
-          <p>{ name }</p><p className="credit">Super Duper Burger{ description }</p>
+          <p>{ name }</p><p className="credit">{ description }</p>
         </div>
       </div>
     );
