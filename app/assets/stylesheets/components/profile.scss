@@ -41,8 +41,8 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
-  // border: 5px #1b1d1f;
-  // border-style: solid;
+  border: 5px rgb(147,16,9);
+  border-style: groove;
   box-shadow: 10px 10px 5px #888888;
 
   // vertical-align: middle;
@@ -51,6 +51,7 @@
 .snack-index-item:hover {
   margin-top: 0%;
   cursor: pointer;
+  box-shadow: 6px 6px 3px #888888;
 }
 
 .snack-index-image {
@@ -62,9 +63,10 @@
 
   img {
     width: 100%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-right: solid 4px #1b1d1f;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    border-right: 5px rgb(147,16,9);
+    border-style: groove;
   }
 }
 
