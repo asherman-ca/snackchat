@@ -13,6 +13,16 @@ export const requestRatings = () => dispatch => (
   )
 );
 
+export const requestSnackRatings = (id) => dispatch => (
+  APIUtil.fetchSnackRatings(id).then(
+    ratings => {
+      dispatch(clearErrors());
+      return dispatch(receiveRatings(ratings));
+    },
+    err => dispatch(receiveErrors(err.responseJSON))
+  )
+);
+
 export const receiveRatings = ratings => ({
   type: RECEIVE_RATINGS,
   ratings

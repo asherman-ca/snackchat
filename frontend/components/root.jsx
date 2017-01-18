@@ -18,7 +18,7 @@ const Root = ({ store }) => {
 
   const _redirect = (nextState, replace) => {
     if(store.getState().session.currentUser) {
-      replace(`/profile/${store.getState().session.currentUser.id}`);
+      replace('/ratings');
     } else {
       replace('/login');
     }

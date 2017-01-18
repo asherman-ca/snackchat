@@ -29,7 +29,3 @@ class SnackIndexItem extends React.Component {
 }
 
 export default withRouter(SnackIndexItem);
-
-// <div className="snack-index-rating">
-//   <p>Delete</p>
-// </div>

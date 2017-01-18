@@ -6,5 +6,6 @@
     json.snack_name rating.snack.name
     json.snack_desc rating.snack.description
     json.snack_id rating.snack.id
+    json.snack_url rating.snack.picture_url
   end
 end

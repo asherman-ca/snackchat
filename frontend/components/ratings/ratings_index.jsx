@@ -1,5 +1,5 @@
 import React from 'react';
-// import RatingIndexItem from './snacks_index_item';
+import RatingIndexItem from './ratings_index_item';
 
 class RatingsIndex extends React.Component {
 
@@ -13,12 +13,13 @@ class RatingsIndex extends React.Component {
   }
 
   render() {
-    const ratings = this.props.snacks;
+    const ratings = this.props.ratings;
+    console.log(ratings);
     if (ratings) {
       return (
-        <div className="snack-index">
-          <div className="snack-index-container">
-            // {ratings.map(rating => <RatingIndexItem key={rating.id} rating={rating} />)}
+        <div className="rating-index">
+          <div className="rating-index-container">
+            {ratings.map(rating => <RatingIndexItem key={`rating${rating.id}`} rating={rating} />)}
           </div>
         </div>
       );

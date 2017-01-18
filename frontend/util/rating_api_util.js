@@ -12,3 +12,11 @@ export const addRating = rating => (
     data: {rating}
   })
 );
+
+export const fetchSnackRatings = (id) => (
+  $.ajax({
+    method: 'GET',
+    url: '/api/ratings',
+    data: {id}
+  })
+);

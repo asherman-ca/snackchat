@@ -40,7 +40,7 @@ class App extends React.Component {
             <Link className='nav-link add-snack' to='/add'>Add</Link><p>Snack</p>
             </div>
             <div className='navbar-header'>
-              <h1><Link to='/feed'>SnackChat</Link></h1><p>share your snacks</p>
+              <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
             <div className='navbar-functions'>
 

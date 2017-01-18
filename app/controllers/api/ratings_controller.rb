@@ -11,7 +11,13 @@ class Api::RatingsController < ApplicationController
   end
 
   def index
-    @ratings = Rating.all
+
+    if params[:id]
+      @ratings = Snack.find(params[:id]).ratings
+    else
+      @ratings = Rating.all
+    end
+
   end
 
   private

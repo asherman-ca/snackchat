@@ -1,8 +1,5 @@
 json.partial! "api/snacks/snack", snack: @snack
 # json.extract! snack, :name, :description, :picture_url, :id
-
-
-
 # json.extract! @snack, :name, :description, :picture_url, :id
 #   json.set! :ratings do
 #     @snack.ratings.each do |rating|

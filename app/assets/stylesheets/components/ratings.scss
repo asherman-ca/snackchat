@@ -1,0 +1,130 @@
+.rating-index {
+  display: flex;
+  justify-content: center;
+}
+
+.rating-index-container {
+  width: 95%;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 5vh;
+  // margin-bottom: 5vh;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 85vh;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: rgb(147,16,9);
+}
+
+.rating-index-item {
+  width: 48%;
+  border-radius: 5px;
+  background: white;
+  margin: 1%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: .5s;
+  border: 5px rgb(147,16,9);
+  border-style: groove;
+  box-shadow: 8px 8px 1px #888888;
+  text-shadow: 1px 1px 1px #888888;
+}
+
+.rating-index-image {
+  min-width: 25%;
+  // border-radius: 5px;
+  display: flex;
+  vertical-align: middle;
+
+
+  img {
+    width: 100%;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    border-right: 5px rgb(147,16,9);
+    border-style: groove;
+  }
+}
+
+.rating-index-rater {
+  min-width: 25%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 15vh;
+  font-size: 2em;
+  color: #1b1d1f;
+  border-right: 5px rgb(147,16,9);
+  border-style: groove;
+
+  p {
+    // width: 100%;
+    line-height: normal;
+    text-align: center;
+    line-height: 15vh;
+  }
+
+  p:first-child {
+    padding-right: .5vw;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  p:first-child:hover {
+    font-size: 1.4em;
+  }
+
+}
+
+.rating-index-title {
+  min-width: 25%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 15vh;
+  font-size: 2em;
+  color: #1b1d1f;
+  border-right: 5px rgb(147,16,9);
+  border-style: groove;
+
+  p {
+    // width: 100%;
+    line-height: normal;
+    text-align: center;
+  }
+
+  p:first-child {
+    padding-right: .5vw;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  p:first-child:hover {
+    font-size: 1.4em;
+  }
+}
+
+.rating-index-rating {
+  min-width: 25%;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  line-height: 15vh;
+  font-size: 2em;
+  color: #1b1d1f;
+
+  p {
+    width: 100%;
+    // line-height: normal;
+    text-align: center;
+
+  }
+}
