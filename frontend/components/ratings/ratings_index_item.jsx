@@ -27,10 +27,10 @@ class RatingIndexItem extends React.Component {
           <img src={ snack_url } />
         </div>
         <div className="rating-index-rater">
-          <p onClick = {this.handleUserClick}>{ user_name }</p><p>rated</p>
+          <p>By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
         <div className="rating-index-title">
-          <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">from Super Duper Burger</p>
+          <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">Super Duper Burger</p>
         </div>
         <div className="rating-index-rating">
           <p>{ rating } stars</p>
