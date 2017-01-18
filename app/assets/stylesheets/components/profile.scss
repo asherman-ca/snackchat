@@ -46,7 +46,7 @@
 
 .snack-index-item {
   width: 48%;
-  border-radius: 5px;
+  // border-radius: 5px;
   background: white;
   margin: 1%;
   height: 15vh;
@@ -54,8 +54,9 @@
   flex-direction: row;
   justify-content: space-between;
   transition: .5s;
-  border: 5px rgb(147,16,9);
-  border-style: groove;
+  border: 9px solid rgb(147,16,9);
+  // border-style: groove;
+  border-radius: 20px;
   box-shadow: 8px 8px 1px #888888;
   text-shadow: 1px 1px 1px #888888;
 
@@ -65,7 +66,6 @@
   animation-timing-function: ease-out;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
-  // vertical-align: middle;
 }
 
 .snack-index-item:hover {
@@ -79,14 +79,17 @@
   // border-radius: 5px;
   display: flex;
   vertical-align: middle;
+  box-shadow: 4px 0px 1px #888888;
 
 
   img {
     width: 100%;
-    // border-top-left-radius: 5px;
-    // border-bottom-left-radius: 5px;
-    border-right: 5px rgb(147,16,9);
-    border-style: groove;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 5px solid rgb(147,16,9);
+    // border-radius: 100px 0px 0px 100px;
+
+    // border-style: groove;
   }
 }
 
@@ -102,18 +105,21 @@
   font-size: 2em;
   padding-top: 2vh;
   color: #1b1d1f;
+  border-top: 4px solid #888888;
+  border-top-right-radius: 10px;
 
   p {
     width: 100%;
     line-height: normal;
     text-align: center;
+    text-decoration: underline;
   }
 
 }
 
 .credit {
   font-size: .8em;
-
+  text-decoration: none !important;
 }
 
 .snack-index-rating {
