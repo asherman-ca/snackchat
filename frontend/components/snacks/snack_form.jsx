@@ -17,7 +17,7 @@ class SnackForm extends React.Component {
   snackAdd(e) {
     e.preventDefault();
     this.props.addSnack(this.state).then(
-      () => this.props.router.replace('/feed/'));
+      (res) => this.props.router.replace(`/snacks/${res.snack.id}`));
   }
 
   update(field) {
