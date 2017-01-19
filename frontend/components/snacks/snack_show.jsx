@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import SnackRatingsItem from '../ratings/snack-ratings-item';
 
 class SnackShow extends React.Component {
   constructor(props) {
@@ -20,11 +21,6 @@ class SnackShow extends React.Component {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(
       () => this.props.router.replace('/feed/'));
-    // this.props.fetchRatings({
-    //   type: "drink",
-    //   id: this.props.params.drinkId,
-    //   amount: 15
-    // });
   }
 
   render () {
@@ -52,6 +48,9 @@ class SnackShow extends React.Component {
               <div className="show-index-rating-button">
                 <p >Rate Me!</p>
               </div>
+            </div>
+            <div className="show-ratings-index">
+              {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}
             </div>
           </div>
         </div>

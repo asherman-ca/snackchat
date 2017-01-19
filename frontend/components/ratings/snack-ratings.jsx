@@ -8,9 +8,9 @@ class SnackRatings extends React.Component {
     // console.log(this.props);
   }
 
-  componentDidMount() {
-    this.props.requestSnackRatings(this.props.id);
-  }
+  // componentDidMount() {
+  //   this.props.requestSnackRatings(this.props.id);
+  // }
 
   render() {
     const ratings = this.props.ratings;
