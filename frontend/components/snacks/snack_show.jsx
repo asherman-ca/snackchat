@@ -18,6 +18,14 @@ class SnackShow extends React.Component {
     );
   }
 
+  componentWillReceiveProps(newProps) {
+    if(this.props.ratings.length !== newProps.ratings.length) {
+      newProps.requestSnackRatings(
+        this.props.params.snackId
+      );
+    }
+  }
+
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(
@@ -27,6 +35,8 @@ class SnackShow extends React.Component {
   render () {
     const snack = this.props.snack;
     const ratings = this.props.ratings;
+    const addRating = this.props.addRating;
+
     if (!snack) {
       return <div>Loading...</div>;
     }
@@ -44,7 +54,7 @@ class SnackShow extends React.Component {
               <div onClick = {this.handleDelete} className="show-index-button">
                 <p >Delete</p>
               </div>
-              <RatingsForm snack={snack} />
+              <RatingsForm snack={snack} addRating={ addRating } />
             </div>
             <div className="show-ratings-index">
               {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}

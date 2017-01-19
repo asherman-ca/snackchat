@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import SnackShow from './snack_show';
 import { deleteSnack, fetchSnack } from '../../actions/snack_actions';
-import { requestSnackRatings } from '../../actions/rating_actions';
+import { requestSnackRatings, addRating } from '../../actions/rating_actions';
 import { selectAllRatings } from '../../reducers/selectors';
 
 const mapStateToProps = (state, ownProps) => ({
@@ -12,7 +12,8 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = dispatch => ({
   fetchSnack: params => dispatch(fetchSnack(params)),
   deleteSnack: id => dispatch(deleteSnack(id)),
-  requestSnackRatings: params => dispatch(requestSnackRatings(params))
+  requestSnackRatings: params => dispatch(requestSnackRatings(params)),
+  addRating: rating => dispatch(addRating(rating))
 });
 
 export default connect(
