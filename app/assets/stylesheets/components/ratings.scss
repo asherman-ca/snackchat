@@ -68,17 +68,16 @@
 
 .rating-index-rater {
   min-width: 25%;
+  line-height: 15vh;
   display: flex;
-  vertical-align: middle;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  line-height: 15vh;
-  font-size: 2em;
-  color: #1b1d1f;
   border: 5px solid rgba(27, 29, 31, .8);
   border-right: none;
-  // border-right: 5px solid rgb(147,16,9);
+
+  font-size: 2em;
+  color: #1b1d1f;
 
   p {
     line-height: normal;
@@ -109,7 +108,7 @@
 .rating-index-title {
   min-width: 25%;
   display: flex;
-  vertical-align: middle;
+  // vertical-align: middle;
   justify-content: center;
   align-items: center;
   flex-direction: column;
