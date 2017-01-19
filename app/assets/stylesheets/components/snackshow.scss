@@ -16,19 +16,19 @@
 }
 
 .show-index-container {
-  width: 95%;
-  padding: 5px;
+  min-height: 89vh;
+  height: 100%;
+  width: 99%;
+  padding: 10px;
   background: rgba(255, 255, 255, 0.5);
-  margin-top: 5vh;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  height: 85vh;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   color: rgb(147,16,9);
+  overflow-y: hidden;
 }
 
 .show-index-title-item {

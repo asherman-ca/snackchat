@@ -2,20 +2,13 @@ $line-height: 10vh;
 
 .navbar {
   height: $line-height;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background: rgba(255, 255, 255, 1);
   color: #dddddd;
   text-shadow: 1px 1px 1px #888888;
 }
-
-// .navbar-logo-container {
-//   display: flex;
-//   vertical-align: middle;
-//   align-items: center;
-//   min-width: 33.33%;
-//   height: $line-height;
-// }
 
 .navbar-logo {
  padding-right: 15%;
@@ -27,7 +20,6 @@ $line-height: 10vh;
  transition: 0.5s;
  justify-content: center;
 
- // padding-left: 40px;
  img {
    width: 7vw;
    transition: .5s;

@@ -33,7 +33,7 @@ class App extends React.Component {
 
     return (
       <div className='browse-sidebars'>
-        <div className='browse-content'>
+
           <div className='navbar'>
             <div className='navbar-profile'>
               {this.showNavLink()} <p>Snacks</p>
@@ -59,7 +59,7 @@ class App extends React.Component {
           <div className='browse'>
             {this.props.children}
           </div>
-        </div>
+
       </div>
     );
   }

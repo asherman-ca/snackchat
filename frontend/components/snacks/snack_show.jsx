@@ -42,7 +42,6 @@ class SnackShow extends React.Component {
     }
     return (
       <div className="show">
-        <div className="show-content">
           <div className="show-index-container">
             <div className="show-index-title-item">
               <div className="show-index-image">
@@ -60,7 +59,6 @@ class SnackShow extends React.Component {
               {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}
             </div>
           </div>
-        </div>
       </div>
     );
   }

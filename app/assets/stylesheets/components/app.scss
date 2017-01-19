@@ -1,16 +1,18 @@
 .browse-sidebars {
   background-color: #1b1d1f;
-}
-
-.browse-content {
-  width: 90%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5.8%;
+  padding-left: 5.8%;
 }
 
 .browse {
   background-image: url('http://res.cloudinary.com/devwor0u0/image/upload/v1484177093/2opwuc_wcmw-hans-vivek_culpzm.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  min-height: 90vh;
+  height: 100%;
   width: 100%;
 }
