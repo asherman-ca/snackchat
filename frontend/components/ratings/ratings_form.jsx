@@ -9,6 +9,8 @@ class RatingsForm extends React.Component {
       rating: '',
       snack_id: this.props.snack.id
     };
+
+    this.addRating = this.addRating.bind(this);
     // console.log(this.props.snack);
     // console.log(this.state);
   }
@@ -18,16 +20,34 @@ class RatingsForm extends React.Component {
     this.props.addRating(this.state);
   }
 
+  update(field) {
+    return e => {
+      this.setState({
+        [field]: e.target.value
+      });
+    };
+  }
+
   render() {
       return (
-        <div className="show-index-item">
-          <div className="show-rating-title">
-            <span>Add Rating:</span>
-          </div>
-          <div className="show-rating-submit">
+          <div className="show-rating-form">
+            <form onSubmit={this.addRating} className='ratingform'>
+              <label htmlFor='rating' className='ratingform-label'>
+                { "Rate:" }
+              </label>
 
+              <input name='rating'
+                     value={ this.state.rating }
+                     onChange={ this.update('rating') }
+                     className='ratingform-input'>
+                     </input>
+
+             <input type='submit'
+                    className='ratingform-button'
+                    value='Stars'></input>
+            </form>
           </div>
-        </div>
+
       );
   }
 }

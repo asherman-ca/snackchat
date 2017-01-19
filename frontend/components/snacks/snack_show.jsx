@@ -34,7 +34,7 @@ class SnackShow extends React.Component {
       <div className="show">
         <div className="show-content">
           <div className="show-index-container">
-            <div className="show-index-item">
+            <div className="show-index-title-item">
               <div className="show-index-image">
                 <img src={ snack.picture_url } />
               </div>
@@ -44,8 +44,8 @@ class SnackShow extends React.Component {
               <div onClick = {this.handleDelete} className="show-index-button">
                 <p >Delete</p>
               </div>
+              <RatingsForm snack={snack} />
             </div>
-            <RatingsForm snack={snack} />
             <div className="show-ratings-index">
               {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}
             </div>
