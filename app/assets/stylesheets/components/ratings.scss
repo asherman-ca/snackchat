@@ -72,7 +72,7 @@
   vertical-align: middle;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   line-height: 15vh;
   font-size: 2em;
   color: #1b1d1f;
@@ -81,6 +81,7 @@
   // border-right: 5px solid rgb(147,16,9);
 
   p {
+    line-height: normal;
     text-align: center;
     text-decoration: underline;
     transition: .5s;
@@ -95,7 +96,7 @@
   p:first-child {
     cursor: default;
     text-decoration: none;
-    padding-right: 5%;
+    // padding-right: 5%;
   }
 
   p:first-child:hover {
@@ -111,22 +112,20 @@
   vertical-align: middle;
   justify-content: center;
   align-items: center;
-  // align-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
   line-height: 15vh;
   font-size: 2em;
   color: #1b1d1f;
   border: 5px solid rgba(27, 29, 31, .8);
   border-right: none;
-  // border-right: 5px solid rgb(147,16,9);
 
   p {
-    line-height: normal;
     text-align: center;
+    line-height: normal;
   }
 
   p:first-child {
-    padding-right: .5vw;
+    // padding-right: .5vw;
     cursor: pointer;
     transition: .5s;
     text-decoration: underline;

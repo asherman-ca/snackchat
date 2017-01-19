@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import SnackRatingsItem from '../ratings/snack-ratings-item';
+import SnackRatingsItem from '../ratings/snack_ratings_item';
 
 class SnackShow extends React.Component {
   constructor(props) {
