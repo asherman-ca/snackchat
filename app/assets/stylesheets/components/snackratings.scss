@@ -18,12 +18,11 @@
 }
 
 .snack-rating-index-item {
-  // flex-direction: row;
-  justify-content: center;
   width: 48%;
   height: 15vh;
   margin: 1%;
   display: flex;
+  justify-content: center;
   transition: .5s;
   border: 9px solid rgb(147,16,9);
   border-radius: 20px;
@@ -114,7 +113,7 @@
 .snack-rating-index-rating {
   min-width: 33.333%;
   display: flex;
-  vertical-align: middle;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 15vh;
