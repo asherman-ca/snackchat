@@ -54,25 +54,17 @@
   p {
     line-height: normal;
     text-align: center;
-    text-decoration: underline;
     transition: .5s;
+  }
+
+  .rater{
+    text-decoration: underline;
     cursor: pointer;
   }
 
-  p:hover {
+  .rater:hover {
     font-size: 1.1em;
     text-shadow: 5px 5px 1px #888888;
-  }
-
-  p:first-child {
-    cursor: default;
-    text-decoration: none;
-    // padding-right: 5%;
-  }
-
-  p:first-child:hover {
-    font-size: inherit;
-    text-shadow: inherit;
   }
 
 }
@@ -127,4 +119,8 @@
     line-height: normal;
     text-align: center;
   }
+}
+
+.snack-rating-credit {
+  font-size: .8em;
 }
