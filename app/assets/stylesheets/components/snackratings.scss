@@ -11,24 +11,25 @@
 }
 
 .show-ratings-index {
+  min-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .snack-rating-index-item {
+  // flex-direction: row;
+  justify-content: center;
   width: 48%;
-  background: white;
-  margin: 1%;
   height: 15vh;
+  margin: 1%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   transition: .5s;
   border: 9px solid rgb(147,16,9);
   border-radius: 20px;
   box-shadow: 8px 8px 1px #888888;
   text-shadow: 1px 1px 1px #888888;
+  background: white;
 
   animation-name: slideOut;
   animation-iteration-count: 1;
@@ -36,28 +37,17 @@
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-.snack-rating-index-image {
-  min-width: 25%;
-  display: flex;
-  vertical-align: middle;
-  border-right: 5px solid rgb(147,16,9);
-
-  img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-}
 
 .snack-rating-index-rater {
-  min-width: 25%;
+  min-width: 33.333%;
   line-height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 5px solid rgba(27, 29, 31, .8);
-  border-right: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 
   font-size: 2em;
   color: #1b1d1f;
@@ -89,7 +79,7 @@
 }
 
 .snack-rating-index-title {
-  min-width: 25%;
+  min-width: 33.333%;
   display: flex;
   // vertical-align: middle;
   justify-content: center;
@@ -100,6 +90,8 @@
   color: #1b1d1f;
   border: 5px solid rgba(27, 29, 31, .8);
   border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   p {
     text-align: center;
@@ -120,7 +112,7 @@
 }
 
 .snack-rating-index-rating {
-  min-width: 25%;
+  min-width: 33.333%;
   display: flex;
   vertical-align: middle;
   justify-content: center;
@@ -128,9 +120,8 @@
   line-height: 15vh;
   font-size: 2em;
   color: #1b1d1f;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   border: 5px solid rgba(27, 29, 31, .8);
+  border-right: none;
 
   p {
     width: 100%;

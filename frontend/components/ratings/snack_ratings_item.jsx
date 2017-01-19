@@ -22,18 +22,15 @@ class RatingIndexItem extends React.Component {
     const { rating, snack_url, snack_name, user_name, snack_desc } = this.props.rating;
 
     return (
-      <div className="rating-index-item">
-        <div className="snack-rating-index-image">
-          <img src={ snack_url } />
-        </div>
-        <div className="snack-rating-index-rater">
-          <p>Rated By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
-        </div>
+      <div className="snack-rating-index-item">
         <div className="snack-rating-index-title">
           <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">{ snack_desc }</p>
         </div>
         <div className="snack-rating-index-rating">
-          <p>{ rating } stars</p>
+          <p>Rated:</p><p>{ rating } stars</p>
+        </div>
+        <div className="snack-rating-index-rater">
+          <p>By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
       </div>
     );
@@ -41,3 +38,7 @@ class RatingIndexItem extends React.Component {
 }
 
 export default withRouter(RatingIndexItem);
+
+// <div className="snack-rating-index-image">
+//   <img src={ snack_url } />
+// </div>
