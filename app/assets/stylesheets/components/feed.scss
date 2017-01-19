@@ -1,66 +1,66 @@
-@keyframes slideOut {
-  0% {
-    opacity: 0;
-    transform: rotateY(90deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotateY(0deg);
-  }
-}
-
-.feed {
-  display: flex;
-  justify-content: center;
-}
-
-.feed-index-container {
-  width: 95%;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.5);
-
-  margin-top: 5vh;
-  // margin-bottom: 5vh;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  height: 85vh;
-  border-radius: 5px;
-  color: rgb(147,16,9);
-
-  animation-name: slideOut;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.feed-index-item {
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 48%;
-  border-radius: 5px;
-  background: white;
-  margin-top: 1%;
-  height: 15vh;
-  display: flex;
-  flex-direction: row;
-  transition: .5s;
-  border: 5px #1b1d1f;
-  border-style: solid;
-  box-shadow: 10px 10px 5px #888888;
-}
-
-.feed-index-title {
-  min-width: 100%;
-  display: flex;
-  vertical-align: top;
-  justify-content: center;
-  line-height: 15vh;
-  color: #1b1d1f;
-  font-size: 2em;
-  text-decoration: underline;
-}
+// @keyframes slideOut {
+//   0% {
+//     opacity: 0;
+//     transform: rotateY(90deg);
+//   }
+//
+//   100% {
+//     opacity: 1;
+//     transform: rotateY(0deg);
+//   }
+// }
+//
+// .feed {
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// .feed-index-container {
+//   width: 95%;
+//   padding: 5px;
+//   background: rgba(255, 255, 255, 0.5);
+//
+//   margin-top: 5vh;
+//   // margin-bottom: 5vh;
+//   margin-left: 2.5%;
+//   margin-right: 2.5%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: flex-start;
+//   height: 85vh;
+//   border-radius: 5px;
+//   color: rgb(147,16,9);
+// 
+//   animation-name: slideOut;
+//   animation-iteration-count: 1;
+//   animation-timing-function: ease-out;
+//   animation-duration: 0.5s;
+//   animation-fill-mode: forwards;
+// }
+//
+// .feed-index-item {
+//   margin-left: 25%;
+//   margin-right: 25%;
+//   width: 48%;
+//   border-radius: 5px;
+//   background: white;
+//   margin-top: 1%;
+//   height: 15vh;
+//   display: flex;
+//   flex-direction: row;
+//   transition: .5s;
+//   border: 5px #1b1d1f;
+//   border-style: solid;
+//   box-shadow: 10px 10px 5px #888888;
+// }
+//
+// .feed-index-title {
+//   min-width: 100%;
+//   display: flex;
+//   vertical-align: top;
+//   justify-content: center;
+//   line-height: 15vh;
+//   color: #1b1d1f;
+//   font-size: 2em;
+//   text-decoration: underline;
+// }

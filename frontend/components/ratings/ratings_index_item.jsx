@@ -19,7 +19,7 @@ class RatingIndexItem extends React.Component {
   }
 
   render() {
-    const { rating, snack_url, snack_name, user_name } = this.props.rating;
+    const { rating, snack_url, snack_name, user_name, snack_desc } = this.props.rating;
 
     return (
       <div className="rating-index-item">
@@ -30,7 +30,7 @@ class RatingIndexItem extends React.Component {
           <p>By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
         <div className="rating-index-title">
-          <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">Super Duper Burger</p>
+          <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">{ snack_desc }</p>
         </div>
         <div className="rating-index-rating">
           <p>{ rating } stars</p>
