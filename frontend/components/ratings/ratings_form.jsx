@@ -4,14 +4,28 @@ import { withRouter } from 'react-router';
 class RatingsForm extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props.snack);
+
+    this.state = {
+      rating: '',
+      snack_id: this.props.snack.id
+    };
+    // console.log(this.props.snack);
+    // console.log(this.state);
+  }
+
+  addRating(e) {
+    e.preventDefault();
+    this.props.addRating(this.state);
   }
 
   render() {
       return (
-        <div>
-          <div className="show-index-item">
-            <h1>test</h1>
+        <div className="show-index-item">
+          <div className="show-rating-title">
+            <span>Add Rating:</span>
+          </div>
+          <div className="show-rating-submit">
+
           </div>
         </div>
       );

@@ -12,6 +12,12 @@ class SnacksIndex extends React.Component {
     this.props.requestUserSnacks(parseInt(this.props.id));
   }
 
+  componentWillReceiveProps(newProps) {
+    if(this.props.id !== newProps.id) {
+      newProps.requestUserSnacks(parseInt(newProps.id));
+    }
+  }
+
   render() {
     const snacks = this.props.snacks;
     if (snacks) {
