@@ -1,52 +1,42 @@
 ## Component Hierarchy
 
-**AuthFormContainer**
- - AuthForm
+**SplashContainer**
+ -Navbar
 
-**HomeContainer**
- - Home
- - Navbar
+  **AuthContainer**
+   -Login
+   -Logout
 
-**DishesContainer**
- - DishHeader
-  + DishIndex
+**AppContainer**
+ -Navbar
 
-**NewDishContainer**
- - NewDish
-  - NewDishButton
+  **RatingsIndex**
+    -RatingsIndex
 
-**ReviewsContainer**
- - ReviewsHeader
-  + CommentIndex
+  **NewSnackContainer**
+    -SnackForm  
 
-**ReviewsIndex**
- - ReviewIndexItem
+  **ProfileContainer**
+   -SnacksIndex
+    -SnackIndexItem
 
-**ReviewItems**
- - CommentIndex
+  **SnacksIndexContainer**
+   -SnacksIndex  
+    -SnackIndexItem
 
-**NewReviewContainer**
- - NewReview
-  - NewReviewButton
-
-**PofileContainer**
- - ReviewIndex
-
-
-**ProfileItem**  
-
-
+  **SnackShowContainer**
+   -SnackRatings
+   -AddSnackRating
 
 ## Routes
 
 |Path   | Component   |
 |-------|-------------|
-| "/sign-up" | "AuthFormContainer" |
-| "/sign-in" | "AuthFormContainer" |
-| "/home" | "HomeContainer" |
-| "/home/comment/:commentId" | "CommentsContainer" |
-| "/home/review/:reviewId" | "ReviewsContainer" |
-| "/home/search-results" | "SearchResultsContainer" |
-| "/new-review" | "NewReviewContainer" |
-| "/new-comment" | "NewCommentContainer" |
-| "/search" | "Search" |
+| "/login" | "SessionFormContainer" |
+| "/signup" | "SessionFormContainer" |
+| "/browse" | "AppContainer" |
+| "/feed" | "AppContainer" |
+| "/ratings" | "RatingsIndexContainer" |
+| "/add" | "SnackFormContainer" |
+| "/profile/:userId" | "SnacksIndexContainer" |
+| "/snacks/:snackId" | "SnackShowContainer" |

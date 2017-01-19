@@ -42,27 +42,27 @@ sufficient CSS styling:
 
 **Objective:** Functioning rails project with front-end Authentication
 
-### Phase 2: Dishes Model, API, and components (2 days)
+### Phase 2: Snacks Model, API, and components (2 days)
 
-**Objective:** Dishes can be created, read, edited and destroyed through the API.
+**Objective:** Snacks can be created, read and destroyed through the API.
 
-### Phase 3: Reviews (2 days)
+### Phase 3: Ratings (2 days)
 
-**Objective:** Users can create reviews for dishes
+**Objective:** Users can create ratings for dishes
 
-### Phase 3: Profiles (2 days)
+### Phase 4: Ratings Feeds (1 day)
 
-**Objective:** Users have profiles that display their reviews
+**Objective:** Ratings are displayed with their snacks and in a feed
 
-### Phase 4: - infinite scroll for Reviews Index (1 day)
+### Phase 5: Profiles (2 days)
 
-**objective:** Add infinite scroll to reviews index
+**Objective:** Users have profiles that display their snacks
 
-### Phase 5: - style overhaul (2 days)
+### Phase 6: - style overhaul (2 days)
 
 **objective:** Make site drop dead gorgeous with seamless UX
 
-
 ### Bonus Features (TBD)
+- [ ] Endless Scroll
 - [ ] Search reviews by content
 - [ ] Comments

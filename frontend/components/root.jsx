@@ -10,8 +10,6 @@ import ProfileContainer from './profile/profile_container';
 import SnackShowContainer from './snacks/snack_show_container';
 import SnacksIndexContainer from './snacks/snacks_index_container';
 import RatingsIndexContainer from './ratings/ratings_index_container';
-// import SnackContainer from './snacks/snack_container';
-  // <Route path='/snacks/:id' component={ SnackContainer } />
 import { clearErrors, removeErrors } from '../actions/error_actions';
 
 const Root = ({ store }) => {
