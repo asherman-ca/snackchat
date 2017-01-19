@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-class RatingIndexItem extends React.Component {
+class SnackRatingsItem extends React.Component {
   constructor(props) {
     super(props);
     this.handleSnackClick = this.handleSnackClick.bind(this);
@@ -37,4 +37,4 @@ class RatingIndexItem extends React.Component {
   }
 }
 
-export default withRouter(RatingIndexItem);
+export default withRouter(SnackRatingsItem);

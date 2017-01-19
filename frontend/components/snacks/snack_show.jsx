@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import SnackRatingsItem from '../ratings/snack_ratings_item';
+import RatingsForm from '../ratings/ratings_form';
 
 class SnackShow extends React.Component {
   constructor(props) {
@@ -44,11 +45,7 @@ class SnackShow extends React.Component {
                 <p >Delete</p>
               </div>
             </div>
-            <div className="show-index-item">
-              <div className="show-index-rating-button">
-                <p >Rate Me!</p>
-              </div>
-            </div>
+            <RatingsForm snack={snack} />
             <div className="show-ratings-index">
               {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}
             </div>
@@ -60,3 +57,9 @@ class SnackShow extends React.Component {
 }
 
 export default SnackShow;
+
+// <div className="show-index-item">
+//   <div className="show-index-rating-button">
+//     <p >Rate Me!</p>
+//   </div>
+// </div>

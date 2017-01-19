@@ -9,19 +9,19 @@ class SessionForm extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    this._redirectLoggedIn();
-  }
-
-  componentDidUpdate() {
-    this._redirectLoggedIn();
-  }
-
-  _redirectLoggedIn() {
-    if(this.props.loggedIn) {
-      this.props.router.replace('/browse');
-    }
-  }
+  // componentDidMount() {
+  //   this._redirectLoggedIn();
+  // }
+  //
+  // componentDidUpdate() {
+  //   this._redirectLoggedIn();
+  // }
+  //
+  // _redirectLoggedIn() {
+  //   if(this.props.loggedIn) {
+  //     this.props.router.replace('/browse');
+  //   }
+  // }
 
   renderErrors() {
     return (
