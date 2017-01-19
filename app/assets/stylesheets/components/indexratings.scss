@@ -74,8 +74,8 @@
   justify-content: center;
   align-items: center;
   border: 5px solid rgba(27, 29, 31, .8);
-  border-right: none;
-
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   font-size: 2em;
   color: #1b1d1f;
 
@@ -138,16 +138,15 @@
 
 .rating-index-rating {
   min-width: 25%;
+  line-height: 15vh;
   display: flex;
-  vertical-align: middle;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 15vh;
   font-size: 2em;
   color: #1b1d1f;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   border: 5px solid rgba(27, 29, 31, .8);
+  border-right: none;
 
   p {
     width: 100%;

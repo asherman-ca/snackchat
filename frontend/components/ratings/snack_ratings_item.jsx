@@ -23,16 +23,16 @@ class RatingIndexItem extends React.Component {
 
     return (
       <div className="rating-index-item">
-        <div className="rating-index-image">
+        <div className="snack-rating-index-image">
           <img src={ snack_url } />
         </div>
-        <div className="rating-index-rater">
+        <div className="snack-rating-index-rater">
           <p>Rated By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
-        <div className="rating-index-title">
+        <div className="snack-rating-index-title">
           <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="credit">{ snack_desc }</p>
         </div>
-        <div className="rating-index-rating">
+        <div className="snack-rating-index-rating">
           <p>{ rating } stars</p>
         </div>
       </div>
