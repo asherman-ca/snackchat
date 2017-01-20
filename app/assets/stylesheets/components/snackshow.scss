@@ -80,19 +80,20 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .show-index-button:hover {
-  cursor: pointer;
-  font-size: 1.8em;
-  text-shadow: 5px 5px 1px #888888;
+  // font-size: 1.8em;
+  // text-shadow: 5px 5px 1px #888888;
+  padding-left: 2vh;
 }
 
-.show-index-rating-button:hover {
-  cursor: pointer;
-  font-size: 1.8em;
-  text-shadow: 5px 5px 1px #888888;
-}
+// .show-index-rating-button:hover {
+//   cursor: pointer;
+//   font-size: 1.8em;
+//   text-shadow: 5px 5px 1px #888888;
+// }
 
 .show-index-title {
   line-height: 15vh;
@@ -185,8 +186,9 @@
     }
 
     .ratingform-button:hover {
-      font-size: 1.1em;
-      text-shadow: 5px 5px 1px #888888;
+      // font-size: 1.1em;
+      // text-shadow: 5px 5px 1px #888888;
+      padding-left: 2vh;
     }
 
   }

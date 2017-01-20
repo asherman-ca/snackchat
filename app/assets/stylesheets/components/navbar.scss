@@ -25,9 +25,9 @@ $line-height: 10vh;
    transition: .5s;
  }
 
- img:hover {
-   width: 8vw;
- }
+ // img:hover {
+ //   width: 8vw;
+ // }
 }
 
 .navbar-profile {
@@ -55,7 +55,7 @@ $line-height: 10vh;
   .nav-link:hover {
     // font-size: 3.3em;
     // text-shadow: 5px 5px 1px #888888;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
   }
 
   p {
@@ -79,22 +79,23 @@ $line-height: 10vh;
   font-size: 2.5em;
   color: rgb(147,16,9);
   transition: .5s;
+  text-decoration: underline;
   }
 
   h1:hover {
   // font-size: 3.3em;
   // text-shadow: 5px 5px 1px #888888;
-  padding-bottom: 1vh;
+  padding-bottom: 2vh;
   }
-}
 
-.navbar-header p {
+  p {
   padding-left: .5vw;
-  line-height: $line-height;
-  text-decoration: underline;
+  // line-height: $line-height;
+
   font-size: 1.5em;
   color: rgb(147,16,9);
-  transition: .5s;
+  // transition: .5s;
+  }
 }
 
 // .navbar-buttons {
@@ -154,7 +155,7 @@ $line-height: 10vh;
   .nav-action:hover {
     // font-size: 2.7em;
     // text-shadow: 5px 5px 1px #888888;
-    padding-bottom: 1vh;
+    padding-bottom: 2vh;
   }
 
   // p {
