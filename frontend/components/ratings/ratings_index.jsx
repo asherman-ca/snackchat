@@ -14,7 +14,6 @@ class RatingsIndex extends React.Component {
 
   render() {
     const ratings = this.props.ratings;
-    console.log(ratings);
     if (ratings) {
       return (
         <div className="rating-index">

@@ -20,6 +20,9 @@ class SnackShow extends React.Component {
 
   componentWillReceiveProps(newProps) {
     if(this.props.ratings.length !== newProps.ratings.length) {
+      this.props.fetchSnack(
+        this.props.params.snackId
+      );
       newProps.requestSnackRatings(
         this.props.params.snackId
       );
