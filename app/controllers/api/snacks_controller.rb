@@ -7,6 +7,10 @@ class Api::SnacksController < ApplicationController
       @snack.picture_url = 'http://res.cloudinary.com/devwor0u0/image/upload/v1484177093/2opwuc_wcmw-hans-vivek_culpzm.jpg'
     end
 
+    if @snack.description.empty?
+      @snack.description = 'The French Laundry'
+    end
+
     if @snack.save
       render "api/snacks/show"
     else

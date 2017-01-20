@@ -32,7 +32,7 @@ class RatingIndexItem extends React.Component {
           <p className="rater-credit">Recieved:</p><p>{ rating } stars</p>
         </div>
         <div className="rating-index-rater">
-          <p className="rater-credit">From:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
+          <p>From:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
       </div>
     );
