@@ -17,6 +17,10 @@ class SnacksIndex extends React.Component {
     }
   }
 
+  componentWillUnmount(){
+    this.props.removeSnacks();
+  }
+
   render() {
     const snacks = this.props.snacks;
     if (snacks) {

@@ -11,6 +11,10 @@ class Feed extends React.Component {
     this.props.requestSnacks();
   }
 
+  componentWillUnmount(){
+    this.props.removeSnacks();
+  }
+
   render() {
     const snacks = this.props.snacks;
     if (snacks) {

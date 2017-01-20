@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SnacksIndex from './snacks_index';
-import { requestSnacks, requestUserSnacks } from '../../actions/snack_actions';
+import { requestSnacks, requestUserSnacks, removeSnacks } from '../../actions/snack_actions';
 import { selectAllSnacks } from '../../reducers/selectors';
 
 const mapStateToProps = (state, { routeParams } ) => ({
@@ -9,7 +9,8 @@ const mapStateToProps = (state, { routeParams } ) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestUserSnacks: (id) => dispatch(requestUserSnacks(id))
+  requestUserSnacks: (id) => dispatch(requestUserSnacks(id)),
+  removeSnacks: () => dispatch(removeSnacks())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SnacksIndex);

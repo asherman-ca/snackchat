@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Feed from './feed';
-import { requestSnacks } from '../../actions/snack_actions';
+import { requestSnacks, removeSnacks } from '../../actions/snack_actions';
 import { selectAllSnacks } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestSnacks: () => dispatch(requestSnacks())
+  requestSnacks: () => dispatch(requestSnacks()),
+  removeSnacks: () => dispatch(removeSnacks())
 });
 
 export default connect(

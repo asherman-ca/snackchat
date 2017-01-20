@@ -4,6 +4,7 @@ import { receiveErrors, clearErrors } from './error_actions.js';
 export const RECEIVE_SNACK = "RECEIVE_SNACK";
 export const RECEIVE_SNACKS = "RECEIVE_SNACKS";
 export const REMOVE_SNACK = "REMOVE_SNACK";
+export const REMOVE_SNACKS = "REMOVE_SNACKS";
 
 export const addSnack = snack => dispatch => (
   APIUtil.addSnack(snack).then(
@@ -54,6 +55,10 @@ export const fetchSnack = (id) => dispatch => (
     err => dispatch(receiveErrors(err.responseJSON))
   )
 );
+
+export const removeSnacks = () => ({
+  type: REMOVE_SNACKS
+});
 
 export const removeSnack = (id) => ({
   type: REMOVE_SNACK,

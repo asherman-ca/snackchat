@@ -1,7 +1,8 @@
 import {
   RECEIVE_SNACK,
   RECEIVE_SNACKS,
-  REMOVE_SNACK
+  REMOVE_SNACK,
+  REMOVE_SNACKS
 } from '../actions/snack_actions';
 import {merge} from 'lodash';
 
@@ -13,6 +14,9 @@ const SnackReducer = ( state = {} , action ) => {
       return newState;
     case RECEIVE_SNACKS:
       return merge({}, action.snacks);
+    case REMOVE_SNACKS:
+      let newestState = {};
+      return newestState;
     case REMOVE_SNACK:
       let newerState = merge({}, state);
       delete newerState[action.id];
