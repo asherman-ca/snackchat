@@ -36,7 +36,7 @@ Snackchat is a single-page application built on Rails and React.js, with many de
 Snackchat met the requirements for a MVP, but will continue to receive new features
 
 [homepage]: app/assets/images/homepage.png
-[snackchat]: www.snackchat.online
+[snackchat]: http://www.snackchat.online
 [proposal]: ./docs/proposal.md
 [schema]: ./docs/schema.md
 [backend]: ./docs/api-endpoints.md
