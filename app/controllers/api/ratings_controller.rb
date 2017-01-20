@@ -12,10 +12,13 @@ class Api::RatingsController < ApplicationController
 
   def index
 
+
+
     if params[:id]
-      @ratings = Snack.find(params[:id]).ratings
+      # @ratings = Snack.find(params[:id]).ratings
+      @ratings = Rating.where(snack_id: params[:id]).includes(:snack, :user)
     else
-      @ratings = Rating.all
+      @ratings = Rating.all.includes(:snack, :user)
     end
 
   end

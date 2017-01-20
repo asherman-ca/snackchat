@@ -25,9 +25,10 @@ class Api::SnacksController < ApplicationController
   def index
 
     if params[:id]
-      @snacks = User.find(params[:id]).snacks
+      # @snacks = User.find(params[:id]).snacks
+      @snacks = Snack.where(user_id: params[:id]).includes(:user)
     else
-      @snacks = Snack.all
+      @snacks = Snack.all.includes(:user)
     end
 
     # @snacks = current_user.snacks
