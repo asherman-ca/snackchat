@@ -4,7 +4,7 @@
 
 Snackchat is an individual project by Alex Sherman
 
-[Home page][homepage]
+![Home page][homepage]
 
 ## Features
 
