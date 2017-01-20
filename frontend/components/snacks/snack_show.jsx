@@ -28,6 +28,11 @@ class SnackShow extends React.Component {
     }
   }
 
+  // runs right before you're about to switch a page
+  componentWillUnmount(){
+    this.props.removeRatings();
+  }
+
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(

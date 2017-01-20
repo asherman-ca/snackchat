@@ -3,6 +3,7 @@ import { receiveErrors, clearErrors } from './error_actions';
 
 export const RECEIVE_RATINGS = "RECEIVE_RATINGS";
 export const RECEIVE_RATING = "RECEIVE_RATING";
+export const REMOVE_RATINGS = "REMOVE_RATINGS";
 
 export const requestRatings = () => dispatch => (
   APIUtil.fetchRatings().then(
@@ -33,6 +34,10 @@ export const addRating = rating => dispatch => (
     err => dispatch(receiveErrors(err.responseJSON))
   )
 );
+
+export const removeRatings = () => ({
+  type: REMOVE_RATINGS
+});
 
 export const receiveRatings = ratings => ({
   type: RECEIVE_RATINGS,

@@ -11,6 +11,10 @@ class RatingsIndex extends React.Component {
     this.props.requestRatings();
   }
 
+  componentWillUnmount() {
+    this.props.removeRatings();
+  }
+
   render() {
     const ratings = this.props.ratings;
     if (ratings) {

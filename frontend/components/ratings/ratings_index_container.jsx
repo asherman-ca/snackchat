@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import RatingsIndex from './ratings_index';
-import { requestRatings } from '../../actions/rating_actions';
+import { requestRatings, removeRatings } from '../../actions/rating_actions';
 import { selectAllRatings } from '../../reducers/selectors';
 
 const mapStateToProps = (state) => ({
@@ -8,7 +8,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  requestRatings: () => dispatch(requestRatings())
+  requestRatings: () => dispatch(requestRatings()),
+  removeRatings: () => dispatch(removeRatings())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(RatingsIndex);
