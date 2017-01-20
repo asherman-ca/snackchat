@@ -64,6 +64,11 @@ class SnackShow extends React.Component {
                 <p >Delete</p>
               </div>
             </div>
+            <div className="show-index-avgrating-item">
+              <div className="show-index-avgrating-text">
+                <p>Average Rating:</p><p>{ snack.average_rating }</p>
+              </div>
+            </div>
             <div className="show-ratings-index">
               {ratings.map(rating => <SnackRatingsItem key={Math.random()} rating={rating} />)}
             </div>
