@@ -44,11 +44,11 @@
   box-shadow: 8px 8px 1px #888888;
   cursor: pointer;
 
-  // animation-name: slideOut;
-  // animation-iteration-count: 1;
-  // animation-timing-function: ease-out;
-  // animation-duration: 1s;
-  // animation-fill-mode: forwards;
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
 }
 
 .snack-index-item:hover {
