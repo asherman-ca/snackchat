@@ -29,7 +29,6 @@ Snackchat is a single-page application built on Rails and React.js, with many de
 
 - [Backend technology][backend]
 - [Frontend technology][frontend]
-- [File storage][file storage] via Amazon Simple Storage Services (S3)
 
 ## Future Implementations
 
