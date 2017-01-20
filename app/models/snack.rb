@@ -8,5 +8,4 @@ class Snack < ActiveRecord::Base
     return 5 if all_ratings.empty?
     all_ratings.inject(0) { |sum, r| sum + r.rating } / all_ratings.length
   end
-
 end

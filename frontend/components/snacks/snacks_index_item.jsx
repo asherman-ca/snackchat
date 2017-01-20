@@ -13,7 +13,7 @@ class SnackIndexItem extends React.Component {
   }
 
   render() {
-    const { name, picture_url, description } = this.props.snack;
+    const { name, picture_url, description, average_rating } = this.props.snack;
 
     return (
       <div className="snack-index-item" onClick = {this.handleClick}>
@@ -24,7 +24,7 @@ class SnackIndexItem extends React.Component {
           <p>{ name }</p><p className="snack-index-credit">{ description }</p>
         </div>
         <div className="snack-index-rating">
-          <p>Average Rating</p>
+          <p>Average Rating: { average_rating }</p>
         </div>
       </div>
     );

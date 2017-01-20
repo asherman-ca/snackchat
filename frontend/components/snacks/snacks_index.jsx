@@ -19,7 +19,6 @@ class SnacksIndex extends React.Component {
 
   render() {
     const snacks = this.props.snacks;
-    console.log(this.props.snacks);
     if (snacks) {
       return (
         <div className="snack-index">

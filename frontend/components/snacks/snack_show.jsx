@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
 import SnackRatingsItem from '../ratings/snack_ratings_item';
 import RatingsForm from '../ratings/ratings_form';
 
@@ -7,10 +7,8 @@ class SnackShow extends React.Component {
   constructor(props) {
     super(props);
     this.handleDelete = this.handleDelete.bind(this);
+    this.handleUserClick = this.handleUserClick.bind(this);
   }
-
-
-  // was componentDidMount
 
   componentDidMount() {
     // this.props.fetchSnack(
@@ -30,18 +28,21 @@ class SnackShow extends React.Component {
     }
   }
 
-
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(
       () => this.props.router.replace('/feed/'));
   }
 
+  handleUserClick() {
+    const userId = this.props.snack.user_id;
+    this.props.router.push(`profile/${userId}`);
+  }
+
   render () {
     const snack = this.props.snack;
     const ratings = this.props.ratings;
     const addRating = this.props.addRating;
-
     if (!snack) {
       return <div>Loading...</div>;
     }
@@ -56,7 +57,7 @@ class SnackShow extends React.Component {
                 <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
               </div>
               <div className="show-index-title">
-                <p className="credit">Shared by:</p><p>{ snack.user_name }</p>
+                <p className="credit">Shared by:</p><p onClick = {this.handleUserClick}>{ snack.user_name }</p>
               </div>
               <RatingsForm snack={snack} addRating={ addRating } />
               <div onClick = {this.handleDelete} className="show-index-button">
@@ -72,7 +73,7 @@ class SnackShow extends React.Component {
   }
 }
 
-export default SnackShow;
+export default withRouter(SnackShow);
 
 // <div className="show-index-item">
 //   <div className="show-index-rating-button">
