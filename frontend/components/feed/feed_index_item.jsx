@@ -13,7 +13,7 @@ class FeedIndexItem extends React.Component {
   }
 
   render() {
-    const { name, picture_url, description, user_name } = this.props.snack;
+    const { name, picture_url, description, user_name, average_rating } = this.props.snack;
 
     return (
       <div className="feed-index-item" onClick = {this.handleClick}>
@@ -25,6 +25,9 @@ class FeedIndexItem extends React.Component {
         </div>
         <div className="feed-index-sharer">
           <p>Shared by:</p><p>{ user_name }</p>
+        </div>
+        <div className="feed-index-avgrating">
+          <p>Average Rating:</p><p>{ average_rating }</p>
         </div>
       </div>
     );

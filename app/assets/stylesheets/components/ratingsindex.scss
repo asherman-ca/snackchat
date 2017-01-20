@@ -141,7 +141,7 @@
   }
 
   p:first-child {
-      color: rgb(147,16,9);
+    color: rgb(147,16,9);
     cursor: pointer;
     transition: .5s;
     text-decoration: underline;
@@ -149,5 +149,9 @@
 
   p:first-child:hover {
     padding-left: 2vh;
+  }
+
+  p:nth-child(2) {
+    font-style: italic;
   }
 }

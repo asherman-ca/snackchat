@@ -24,7 +24,7 @@ class SnackIndexItem extends React.Component {
           <p>{ name }</p><p className="snack-index-credit">{ description }</p>
         </div>
         <div className="snack-index-rating">
-          <p>Average Rating: { average_rating }</p>
+          <p>Average Rating:</p><p>{ average_rating }</p>
         </div>
       </div>
     );

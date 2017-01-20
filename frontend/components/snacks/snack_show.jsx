@@ -54,10 +54,10 @@ class SnackShow extends React.Component {
                 <img src={ snack.picture_url } />
               </div>
               <div className="show-index-title">
-                <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
+                <p>{ snack.name }</p><p>{ snack.description }</p>
               </div>
-              <div className="show-index-title">
-                <p className="credit">Shared by:</p><p onClick = {this.handleUserClick}>{ snack.user_name }</p>
+              <div className="show-index-sharer">
+                <p>Shared by:</p><p onClick = {this.handleUserClick}>{ snack.user_name }</p>
               </div>
               <RatingsForm snack={snack} addRating={ addRating } />
               <div onClick = {this.handleDelete} className="show-index-button">
