@@ -4,7 +4,7 @@
 
 Snackchat is an individual project by Alex Sherman
 
-![Chime home page: www.snackchat.online][home page]
+[Home page][homepage]
 
 ## Features
 
@@ -14,8 +14,6 @@ Snackchat is an individual project by Alex Sherman
 - Rating snacks and average ratings for snacks
 - Feed of recent ratings
 - Feed of global snacks
-
-![demo_user's tracks: http://www.chime.audio/demo_user/tracks][tracks]
 
 ## Project Design
 
@@ -37,6 +35,7 @@ Snackchat is a single-page application built on Rails and React.js, with many de
 
 Snackchat met the requirements for a MVP, but will continue to receive new features
 
+[homepage]: app/assets/images/homepage.png
 [snackchat]: www.snackchat.online
 [proposal]: ./docs/proposal.md
 [schema]: ./docs/schema.md
