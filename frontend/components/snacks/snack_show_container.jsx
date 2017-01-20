@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SnackShow from './snack_show';
-import { deleteSnack, fetchSnack } from '../../actions/snack_actions';
+import { deleteSnack, fetchSnack} from '../../actions/snack_actions';
 import { requestSnackRatings, addRating } from '../../actions/rating_actions';
 import { selectAllRatings } from '../../reducers/selectors';
 

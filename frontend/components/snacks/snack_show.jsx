@@ -18,6 +18,15 @@ class SnackShow extends React.Component {
     );
   }
 
+  componentWillReceiveProps(newProps) {
+    if(this.props.ratings.length !== newProps.ratings.length) {
+      newProps.requestSnackRatings(
+        this.props.params.snackId
+      );
+    }
+  }
+
+
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteSnack(this.props.params.snackId).then(
@@ -40,12 +49,15 @@ class SnackShow extends React.Component {
                 <img src={ snack.picture_url } />
               </div>
               <div className="show-index-title">
+                <p className="credit">Shared by:</p><p>{ snack.user_name }</p>
+              </div>
+              <div className="show-index-title">
                 <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
               </div>
+              <RatingsForm snack={snack} addRating={ addRating } />
               <div onClick = {this.handleDelete} className="show-index-button">
                 <p >Delete</p>
               </div>
-              <RatingsForm snack={snack} addRating={ addRating } />
             </div>
             <div className="show-ratings-index">
               {ratings.map(rating => <SnackRatingsItem key={Math.random()} rating={rating} />)}

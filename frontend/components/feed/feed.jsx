@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import SnackIndexItem from '../snacks/snacks_index_item';
+import FeedIndexItem from '../feed/feed_index_item';
 
 class Feed extends React.Component {
   constructor(props) {
@@ -15,9 +15,9 @@ class Feed extends React.Component {
     const snacks = this.props.snacks;
     if (snacks) {
       return (
-        <div className='snack-index'>
-          <div className='snack-index-container'>
-            {snacks.map(snack => <SnackIndexItem key={snack.id} snack={snack} />)}
+        <div className='feed-index'>
+          <div className='feed-index-container'>
+            {snacks.map(snack => <FeedIndexItem key={snack.id} snack={snack} />)}
           </div>
         </div>
       );

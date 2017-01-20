@@ -18,7 +18,7 @@
 }
 
 .snack-rating-index-item {
-  width: 46%;
+  width: 29.333%;
   height: 15vh;
   margin: 2%;
   display: flex;
@@ -38,7 +38,7 @@
 }
 
 .snack-rating-index-rater {
-  min-width: 33.333%;
+  min-width: 50%;
   line-height: 15vh;
   display: flex;
   flex-direction: column;
@@ -57,53 +57,21 @@
     transition: .5s;
   }
 
-  .rater{
+  p:nth-child(2){
+    color: rgb(147,16,9);
     text-decoration: underline;
     cursor: pointer;
   }
 
-  .rater:hover {
+  p:nth-child(2):hover {
     font-size: 1.1em;
     text-shadow: 5px 5px 1px #888888;
   }
 
-}
-
-.snack-rating-index-title {
-  min-width: 33.333%;
-  display: flex;
-  // vertical-align: middle;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  line-height: 15vh;
-  font-size: 2em;
-  color: #1b1d1f;
-  border: 5px solid rgba(27, 29, 31, .8);
-  border-right: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-
-  p {
-    text-align: center;
-    line-height: normal;
-  }
-
-  p:first-child {
-    // padding-right: .5vw;
-    cursor: pointer;
-    transition: .5s;
-    text-decoration: underline;
-  }
-
-  p:first-child:hover {
-    font-size: 1.1em;
-    text-shadow: 5px 5px 1px #888888;
-  }
 }
 
 .snack-rating-index-rating {
-  min-width: 33.333%;
+  min-width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +80,8 @@
   font-size: 2em;
   color: #1b1d1f;
   border: 5px solid rgba(27, 29, 31, .8);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border-right: none;
 
   p {
@@ -119,8 +89,41 @@
     line-height: normal;
     text-align: center;
   }
+
 }
 
 .snack-rating-credit {
   font-size: .8em;
 }
+
+// .snack-rating-index-title {
+//   min-width: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   line-height: 15vh;
+//   font-size: 2em;
+//   color: #1b1d1f;
+//   border: 5px solid rgba(27, 29, 31, .8);
+//   border-right: none;
+// border-top-left-radius: 10px;
+// border-bottom-left-radius: 10px;
+//
+//   p {
+//     text-align: center;
+//     line-height: normal;
+//   }
+//
+//   p:first-child {
+//     // padding-right: .5vw;
+//     cursor: pointer;
+//     transition: .5s;
+//     text-decoration: underline;
+//   }
+//
+//   p:first-child:hover {
+//     font-size: 1.1em;
+//     text-shadow: 5px 5px 1px #888888;
+//   }
+// }

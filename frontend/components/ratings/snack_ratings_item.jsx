@@ -23,14 +23,11 @@ class SnackRatingsItem extends React.Component {
 
     return (
       <div className="snack-rating-index-item">
-        <div className="snack-rating-index-title">
-          <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="snack-rating-credit">{ snack_desc }</p>
-        </div>
         <div className="snack-rating-index-rating">
           <p className="snack-rating-credit">Rated:</p><p>{ rating } stars</p>
         </div>
         <div className="snack-rating-index-rater">
-          <p className="snack-rating-credit">By:</p><p className="rater" onClick = {this.handleUserClick}>{ user_name }</p>
+          <p className="snack-rating-credit">By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
         </div>
       </div>
     );
@@ -38,3 +35,7 @@ class SnackRatingsItem extends React.Component {
 }
 
 export default withRouter(SnackRatingsItem);
+
+// <div className="snack-rating-index-title">
+//   <p onClick = {this.handleSnackClick}>{ snack_name }</p><p className="snack-rating-credit">{ snack_desc }</p>
+// </div>

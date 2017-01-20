@@ -32,10 +32,9 @@ class RatingsForm extends React.Component {
       return (
           <div className="show-rating-form">
             <form onSubmit={this.addRating} className='ratingform'>
-              <label htmlFor='rating' className='ratingform-label'>
-                { "Rate:" }
-              </label>
+              <p>Rate:</p>
 
+              <div className='form-sub'>
               <input name='rating'
                      value={ this.state.rating }
                      onChange={ this.update('rating') }
@@ -45,6 +44,7 @@ class RatingsForm extends React.Component {
              <input type='submit'
                     className='ratingform-button'
                     value='Stars'></input>
+              </div>
             </form>
           </div>
 
@@ -53,3 +53,8 @@ class RatingsForm extends React.Component {
 }
 
 export default withRouter(RatingsForm);
+
+
+// <label htmlFor='rating'>
+//   { "Rate:" }
+// </label>
