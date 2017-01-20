@@ -10,9 +10,10 @@ class SnackShow extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchSnack(
-      this.props.params.snackId
-    );
+    // this.props.fetchSnack(
+    //   this.props.params.snackId
+    // );
+    this.props.requestSnacks();
     this.props.requestSnackRatings(
       this.props.params.snackId
     );
@@ -49,10 +50,10 @@ class SnackShow extends React.Component {
                 <img src={ snack.picture_url } />
               </div>
               <div className="show-index-title">
-                <p className="credit">Shared by:</p><p>{ snack.user_name }</p>
+                <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
               </div>
               <div className="show-index-title">
-                <p>{ snack.name }</p><p className="credit">{ snack.description }</p>
+                <p className="credit">Shared by:</p><p>{ snack.user_name }</p>
               </div>
               <RatingsForm snack={snack} addRating={ addRating } />
               <div onClick = {this.handleDelete} className="show-index-button">

@@ -43,7 +43,6 @@ class App extends React.Component {
               <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>
             </div>
             <div className='navbar-functions'>
-
               <div className='nav-action'>
                 <Link to='/feed'>
                   <span>Snacks</span>
