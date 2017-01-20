@@ -69,7 +69,28 @@
 }
 
 .snack-index-title {
-  min-width: 75%;
+  min-width: 37.5%;
+  line-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgba(27, 29, 31, .8);
+  font-size: 1.5em;
+  color: #1b1d1f;
+
+  p {
+    line-height: normal;
+    text-align: center;
+  }
+
+  p:nth-child(2) {
+    font-size: .8em;
+  }
+}
+
+.snack-index-rating {
+  min-width: 37.5%;
   line-height: 15vh;
   display: flex;
   flex-direction: column;
@@ -79,25 +100,13 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 
-  font-size: 2em;
+
+  font-size: 1.5em;
   color: #1b1d1f;
 
   p {
     line-height: normal;
     text-align: center;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
-}
-
-.credit {
-  font-size: .8em;
-  text-decoration: none !important;
-}
-
-.snack-index-rating {
-  min-width: 33.333%;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  line-height: 15vh;
 }

@@ -21,7 +21,10 @@ class SnackIndexItem extends React.Component {
           <img src={ picture_url } />
         </div>
         <div className="snack-index-title">
-          <p>{ name }</p><p className="credit">{ description }</p>
+          <p>{ name }</p><p className="snack-index-credit">{ description }</p>
+        </div>
+        <div className="snack-index-rating">
+          <p>Average Rating</p>
         </div>
       </div>
     );
