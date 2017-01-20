@@ -138,6 +138,7 @@
   p {
     text-align: center;
     line-height: normal;
+    padding: 2%;
   }
 
   p:first-child {
@@ -148,7 +149,8 @@
   }
 
   p:first-child:hover {
-    padding-left: 2vh;
+    padding-top: 0%;
+    padding-bottom: 4%;
   }
 
   p:nth-child(2) {
