@@ -29,11 +29,11 @@
   box-shadow: 8px 8px 1px #888888;
   background: white;
 
-  animation-name: slideOut;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  // animation-name: slideOut;
+  // animation-iteration-count: 1;
+  // animation-timing-function: ease-out;
+  // animation-duration: 1s;
+  // animation-fill-mode: forwards;
 }
 
 .snack-rating-index-rater {
@@ -63,8 +63,6 @@
   }
 
   p:nth-child(2):hover {
-    // font-size: 1.1em;
-    // text-shadow: 5px 5px 1px #888888;
     padding-left: 2vh;
   }
 
@@ -95,35 +93,3 @@
 .snack-rating-credit {
   font-size: .8em;
 }
-
-// .snack-rating-index-title {
-//   min-width: 50%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-//   line-height: 15vh;
-//   font-size: 2em;
-//   color: #1b1d1f;
-//   border: 5px solid rgba(27, 29, 31, .8);
-//   border-right: none;
-// border-top-left-radius: 10px;
-// border-bottom-left-radius: 10px;
-//
-//   p {
-//     text-align: center;
-//     line-height: normal;
-//   }
-//
-//   p:first-child {
-//     // padding-right: .5vw;
-//     cursor: pointer;
-//     transition: .5s;
-//     text-decoration: underline;
-//   }
-//
-//   p:first-child:hover {
-//     font-size: 1.1em;
-//     text-shadow: 5px 5px 1px #888888;
-//   }
-// }

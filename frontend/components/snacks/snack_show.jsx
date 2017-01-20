@@ -9,6 +9,9 @@ class SnackShow extends React.Component {
     this.handleDelete = this.handleDelete.bind(this);
   }
 
+
+  // was componentDidMount
+
   componentDidMount() {
     // this.props.fetchSnack(
     //   this.props.params.snackId
