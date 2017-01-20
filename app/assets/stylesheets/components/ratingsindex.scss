@@ -110,16 +110,15 @@
     text-shadow: 5px 5px 1px #888888;
   }
 
-  p:first-child {
+  .rater-credit {
     cursor: default;
     text-decoration: none;
   }
 
-  p:first-child:hover {
+  .rater-credit:hover {
     font-size: inherit;
     text-shadow: inherit;
   }
-
 }
 
 .rating-index-title {
