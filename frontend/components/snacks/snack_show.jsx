@@ -59,7 +59,7 @@ class SnackShow extends React.Component {
               <RatingsForm snack={snack} addRating={ addRating } />
             </div>
             <div className="show-ratings-index">
-              {ratings.map(rating => <SnackRatingsItem key={rating.id} rating={rating} />)}
+              {ratings.map(rating => <SnackRatingsItem key={Math.random()} rating={rating} />)}
             </div>
           </div>
       </div>

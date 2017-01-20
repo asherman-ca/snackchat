@@ -5,7 +5,6 @@ class RatingsIndex extends React.Component {
 
   constructor(props) {
     super(props);
-    // console.log(this.props);
   }
 
   componentDidMount() {
@@ -18,7 +17,7 @@ class RatingsIndex extends React.Component {
       return (
         <div className="rating-index">
           <div className="rating-index-container">
-            {ratings.map(rating => <RatingIndexItem key={rating.id} rating={rating} />)}
+            {ratings.map(rating => <RatingIndexItem key={Math.random()} rating={rating} />)}
           </div>
         </div>
       );
