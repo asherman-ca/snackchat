@@ -126,11 +126,11 @@
 .rating-index-title {
   min-width: 25%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   line-height: 15vh;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #1b1d1f;
   border: 5px solid rgba(27, 29, 31, .8);
   border-right: none;
