@@ -1,12 +1,13 @@
 .browse-sidebars {
   background-color: #1b1d1f;
+  min-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 5.8%;
-  padding-left: 5.8%;
-  min-width: 1400px;
+  // padding-right: 5.8%;
+  // padding-left: 5.8%;
+
 }
 
 .browse {
@@ -15,5 +16,5 @@
   background-size: cover;
   min-height: 90vh;
   height: 100%;
-  width: 100%;
+  width: 90%;
 }

@@ -29,7 +29,7 @@ class Splash extends React.Component {
   render() {
     return (
       <div className='splash-sidebars'>
-        <div className='splash-content'>
+
           <div className='navbar'>
             <div className='navbar-logo'>
               <img src="http://res.cloudinary.com/devwor0u0/image/upload/v1484180645/SnackChat_hwfh0w.png"/>
@@ -56,7 +56,6 @@ class Splash extends React.Component {
           <div className='splash'>
             { this.props.children }
           </div>
-        </div>
       </div>
     );
   }
