@@ -23,10 +23,15 @@ class SnacksIndex extends React.Component {
 
   render() {
     const snacks = this.props.snacks;
-    if (snacks) {
+    if (snacks[0]) {
+
       return (
         <div className="snack-index">
+
           <div className="snack-index-container">
+            <div className="snack-index-user">
+              <h1>{snacks[0].user_name} Snacks</h1>
+            </div>
             {snacks.map(snack => <SnackIndexItem key={snack.id} snack={snack} />)}
           </div>
         </div>

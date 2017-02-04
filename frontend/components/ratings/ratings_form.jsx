@@ -35,15 +35,15 @@ class RatingsForm extends React.Component {
               <p>Rate:</p>
 
               <div className='form-sub'>
-              <input name='rating'
-                     value={ this.state.rating }
-                     onChange={ this.update('rating') }
-                     className='ratingform-input'>
-                     </input>
+                <input name='rating'
+                       value={ this.state.rating }
+                       onChange={ this.update('rating') }
+                       className='ratingform-input'>
+                       </input>
 
-             <input type='submit'
-                    className='ratingform-button'
-                    value='Stars'></input>
+               <input type='submit'
+                      className='ratingform-button'
+                      value='Stars'></input>
               </div>
             </form>
           </div>
