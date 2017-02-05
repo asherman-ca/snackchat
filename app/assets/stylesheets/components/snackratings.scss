@@ -24,9 +24,9 @@
   display: flex;
   justify-content: center;
   transition: .5s;
-  border: 7px solid rgb(147,16,9);
+  // border: 7px solid rgb(147,16,9);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   border-radius: 20px;
-  box-shadow: 8px 8px 1px #888888;
   background: white;
 
   animation-name: slideOut;

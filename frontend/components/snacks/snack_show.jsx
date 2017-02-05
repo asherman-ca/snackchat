@@ -66,7 +66,7 @@ class SnackShow extends React.Component {
               </div>
               <RatingsForm snack={snack} addRating={ addRating } />
               <div onClick = {this.handleDelete} className="show-index-button">
-                <p >Delete</p>
+                <p>Delete</p>
               </div>
             </div>
             <div className="show-index-avgrating-item">
