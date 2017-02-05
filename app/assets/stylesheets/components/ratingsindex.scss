@@ -39,14 +39,14 @@
   margin-bottom: 2%;
   margin-left: 37.5%;
   margin-right: 37.5%;
-  height: 10vh;
+  height: 75px;
   font-size: 1.5em;
   color: #1b1d1f;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: .5s;
-  border: 5px solid #1b1d1f;
+  // border: 5px solid #1b1d1f;
   // border: 7px solid rgb(147,16,9);
   border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -58,12 +58,24 @@
   animation-fill-mode: forwards;
 }
 
+.rating-index-top-text {
+  height: 55px;
+  width: 100%;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .rating-index-item {
   width: 46%;
   background: white;
   margin: 2%;
-  height: 15vh;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   transition: .5s;
@@ -79,29 +91,31 @@
 }
 
 .rating-index-image {
-  min-width: 25%;
+  height: 90px;
+  width: 23%;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
-  vertical-align: middle;
-  // border-right: 5px solid rgb(147,16,9);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   img {
-    width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
 }
 
 .rating-index-rating {
-  min-width: 25%;
-  line-height: 15vh;
+  height: 90px;
+  width: 23%;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.2em;
   color: #1b1d1f;
-  border: 5px solid #1b1d1f;
-  border-right: none;
 
   p {
     width: 100%;
@@ -111,13 +125,14 @@
 }
 
 .rating-index-rater {
-  min-width: 25%;
-  line-height: 15vh;
+  height: 90px;
+  width: 23%;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 5px solid #1b1d1f;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 1.2em;
@@ -152,16 +167,16 @@
 }
 
 .rating-index-title {
-  min-width: 25%;
+  height: 90px;
+  width: 23%;
+  margin: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 15vh;
   font-size: 1.2em;
   color: #1b1d1f;
-  border: 5px solid #1b1d1f;
-  border-right: none;
 
   p {
     text-align: center;
