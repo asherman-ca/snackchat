@@ -38,7 +38,7 @@
   margin-top: 2%;
   margin-bottom: 2%;
   background-color: #f2f2f2;
-  height: 75px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@
 }
 
 .feed-index-top-text {
-  height: 55px;
+  height: 75px;
   width: 100%;
   margin: 10px;
   border-radius: 12px;
@@ -72,7 +72,7 @@
   width: 46%;
   background-color: #f2f2f2;
   margin: 2%;
-  height: 110px;
+  height: 160px;
   display: flex;
   flex-direction: row;
   transition: .5s;
@@ -95,7 +95,7 @@
 }
 
 .feed-index-image {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -110,7 +110,7 @@
 }
 
 .feed-index-title {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;
@@ -134,7 +134,7 @@
 }
 
 .feed-index-sharer {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;
@@ -155,7 +155,7 @@
 }
 
 .feed-index-avgrating {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;

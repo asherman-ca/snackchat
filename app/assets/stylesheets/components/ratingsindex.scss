@@ -27,7 +27,7 @@
   align-content: flex-start;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  color: rgb(147,16,9);
+  // color: rgb(147,16,9);
   overflow-y: hidden;
   // overflow-y: scroll;
 }
@@ -39,7 +39,7 @@
   margin-bottom: 2%;
   margin-left: 37.5%;
   margin-right: 37.5%;
-  height: 75px;
+  height: 100px;
   font-size: 1.5em;
   color: #1b1d1f;
   display: flex;
@@ -59,7 +59,7 @@
 }
 
 .rating-index-top-text {
-  height: 55px;
+  height: 75px;
   width: 100%;
   margin: 10px;
   border-radius: 12px;
@@ -75,7 +75,7 @@
   width: 46%;
   background-color: #f2f2f2;
   margin: 2%;
-  height: 110px;
+  height: 160px;
   display: flex;
   justify-content: space-between;
   transition: .5s;
@@ -91,7 +91,7 @@
 }
 
 .rating-index-image {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -106,7 +106,7 @@
 }
 
 .rating-index-rating {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;
@@ -126,7 +126,7 @@
 }
 
 .rating-index-rater {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;
@@ -169,7 +169,7 @@
 }
 
 .rating-index-title {
-  height: 90px;
+  height: 140px;
   width: 23%;
   margin: 10px;
   background-color: white;
