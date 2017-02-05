@@ -32,7 +32,7 @@
 }
 
 .snack-index-user {
-  height: 10vh;
+  height: 75px;
   width: 25%;
   margin-left: 37.5%;
   margin-top: 2%;
@@ -43,16 +43,28 @@
   font-size: 1.5em;
   background-color: white;
   color: #1b1d1f;
-  border: 5px solid #1b1d1f;
+  // border: 5px solid #1b1d1f;
   border-radius: 20px;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+}
+
+.snack-index-user-text{
+  height: 80%;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .snack-index-item {
   width: 46%;
   background: white;
   margin: 2%;
-  height: 15vh;
+  height: 110px;
   display: flex;
   flex-direction: row;
   transition: .5s;
@@ -73,9 +85,12 @@
 }
 
 .snack-index-image {
-  width: 25%;
+  width: 23%;
+  margin: 1%;
   display: flex;
-  // border-right: 5px solid rgb(147,16,9);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   img {
     border-top-left-radius: 10px;
@@ -84,14 +99,16 @@
 }
 
 .snack-index-title {
-  min-width: 37.5%;
-  line-height: 15vh;
+  min-width: 35.5%;
+  // line-height: 110px;
+  margin: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid #1b1d1f;
+  // border: 5px solid #1b1d1f;
   color: #1b1d1f;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   p {
     font-size: 1.5em;
@@ -105,16 +122,18 @@
 }
 
 .snack-index-rating {
-  min-width: 37.5%;
-  line-height: 15vh;
+  min-width: 35.5%;
+  margin: 1%;
+  // line-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 5px solid #1b1d1f;
-  border-left: none;
+  // border: 5px solid #1b1d1f;
+  // border-left: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   font-size: 1.5em;
   color: #1b1d1f;
