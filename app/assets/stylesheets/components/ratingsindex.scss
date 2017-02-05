@@ -32,6 +32,33 @@
   // overflow-y: scroll;
 }
 
+.rating-index-top {
+  width: 35%;
+  background: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 32.5%;
+  margin-right: 32.5%;
+  height: 10vh;
+  font-size: 1.5em;
+  color: #1b1d1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  border: 5px solid #1b1d1f;
+  // border: 7px solid rgb(147,16,9);
+  border-radius: 20px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+  animation-name: slideOut;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
+
 .rating-index-item {
   width: 46%;
   background: white;
