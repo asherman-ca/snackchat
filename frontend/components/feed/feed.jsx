@@ -22,7 +22,9 @@ class Feed extends React.Component {
         <div className='feed-index'>
           <div className='feed-index-container'>
             <div className='feed-index-top'>
-              <h1>Local Snacks</h1>
+              <div className='feed-index-top-text'>
+                <h1>Local Snacks</h1>
+              </div>
             </div>
             {snacks.map(snack => <FeedIndexItem key={snack.id} snack={snack} />)}
           </div>
