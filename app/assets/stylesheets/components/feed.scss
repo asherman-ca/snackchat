@@ -37,7 +37,7 @@
   margin-right: 37.5%;
   margin-top: 2%;
   margin-bottom: 2%;
-  background: white;
+  background-color: #f2f2f2;
   height: 75px;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@
   width: 100%;
   margin: 10px;
   border-radius: 12px;
-  background-color: #f2f2f2;
+  background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@
 
 .feed-index-item {
   width: 46%;
-  background: white;
+  background-color: #f2f2f2;
   margin: 2%;
   height: 110px;
   display: flex;
@@ -113,6 +113,7 @@
   height: 90px;
   width: 23%;
   margin: 10px;
+  background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
@@ -136,6 +137,7 @@
   height: 90px;
   width: 23%;
   margin: 10px;
+  background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
@@ -156,6 +158,7 @@
   height: 90px;
   width: 23%;
   margin: 10px;
+  background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   justify-content: center;
