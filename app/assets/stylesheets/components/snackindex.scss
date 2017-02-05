@@ -50,8 +50,9 @@
 }
 
 .snack-index-user-text{
-  height: 80%;
-  width: 95%;
+  height: 55px;
+  width: 100%;
+  margin: 10px;
   border-radius: 20px;
   background-color: #f2f2f2;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -85,8 +86,10 @@
 }
 
 .snack-index-image {
+  height: 90px;
   width: 23%;
-  margin: 1%;
+  margin: 10px;
+  margin-right: 0px;
   display: flex;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-top-left-radius: 10px;
@@ -100,8 +103,8 @@
 
 .snack-index-title {
   min-width: 35.5%;
-  // line-height: 110px;
-  margin: 1%;
+  height: 90px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,8 +126,9 @@
 
 .snack-index-rating {
   min-width: 35.5%;
-  margin: 1%;
-  // line-height: 15vh;
+  height: 90px;
+  margin: 10px;
+  margin-left: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;

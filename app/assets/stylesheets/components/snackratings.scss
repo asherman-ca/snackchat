@@ -37,8 +37,8 @@
 
 .snack-rating-index-rater {
   min-width: 44%;
-  margin: 3%;
-  // line-height: 50px;
+  height: 90px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +71,8 @@
 
 .snack-rating-index-rating {
   min-width: 44%;
-  margin: 3%;
+  height: 90px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
