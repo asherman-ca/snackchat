@@ -41,30 +41,42 @@ $line-height: 10vh;
   justify-content: center;
   color: rgb(147,16,9);
 
+  .navbar-profile-button {
+    padding: 5px 30px;
+    background-color: rgb(147,16,9);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+  }
 
   .nav-link {
-    text-decoration: underline;
-    transition: .5s;
-    font-size: 2.5em;
+    // text-decoration: underline;
+    // transition: .5s;
+    // font-size: 40px;
+    // color: white;
   }
 
   .add-snack {
-    padding-left: 1vw;
+    margin-left: 20px;
   }
 
-  .nav-link:hover {
-    // font-size: 3.3em;
-    // text-shadow: 5px 5px 1px #888888;
-    padding-bottom: 2vh;
+  .navbar-profile-button:hover {
+    margin-bottom: 10px;
   }
 
-  p {
-    padding-left: .5vw;
-    // line-height: $line-height;
-    font-size: 1.5em;
-    color: rgb(147,16,9);
-    transition: .5s;
-  }
+  // p {
+  //   padding-left: .5vw;
+  //   // line-height: $line-height;
+  //   font-size: 1.5em;
+  //   color: rgb(147,16,9);
+  //   transition: .5s;
+  // }
 }
 
 .navbar-header {
@@ -143,19 +155,28 @@ $line-height: 10vh;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  color: rgb(147,16,9);
+  color: white;
   cursor: pointer;
 
   .nav-action {
+    padding: 5px 30px;
+    background-color: rgb(147,16,9);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
     transition: .5s;
-    font-size: 2.5em;
-    text-decoration: underline;
+
+    // text-decoration: underline;
   }
 
   .nav-action:hover {
     // font-size: 2.7em;
     // text-shadow: 5px 5px 1px #888888;
-    padding-bottom: 2vh;
+    margin-bottom: 10px;
   }
 
   // p {
@@ -167,7 +188,7 @@ $line-height: 10vh;
   // }
 
   .log-action {
-    margin-left: 2vw;
+    margin-left: 20px;
   }
 }
 

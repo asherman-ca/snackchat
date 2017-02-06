@@ -24,10 +24,12 @@ class SnackRatingsItem extends React.Component {
     return (
       <div className="snack-rating-index-item">
         <div className="snack-rating-index-rating">
-          <p className="snack-rating-credit">Rated:</p><p>{ rating } stars</p>
+          <p>{ rating } stars</p>
         </div>
         <div className="snack-rating-index-rater">
-          <p className="snack-rating-credit">By:</p><p onClick = {this.handleUserClick}>{ user_name }</p>
+          <div className="rater-user-button" onClick = {this.handleUserClick}>
+            <p>{ user_name }</p>
+          </div>
         </div>
       </div>
     );

@@ -55,38 +55,51 @@
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   color: #1b1d1f;
 
+  // p:nth-child(2){
+  //   text-decoration: underline;
+  //   cursor: pointer;
+  // }
+  //
+  // p:nth-child(2):hover {
+  //   padding-left: 2vh;
+  // }
+
+}
+
+.rater-user-button {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background-color: rgb(147,16,9);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  transition: .5s;
+  padding: 5px 30px;
+
+
   p {
     font-size: 25px;
-    padding: 5px;
     line-height: normal;
     text-align: center;
     transition: .5s;
+    color: white;
   }
+}
 
-  p:nth-child(2){
-    color: rgb(147,16,9);
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  p:nth-child(2):hover {
-    padding-left: 2vh;
-  }
-
+.rater-user-button:hover {
+  margin-bottom: 10px;
 }
 
 .snack-rating-index-rating {
   width: 50%;
   height: 100%;
-  // padding: 10px;
-  // padding-bottom: 55px;
-  // height: 140px;
-  // margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // line-height: 50px;
   background-color: white;
   color: #1b1d1f;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);

@@ -36,8 +36,12 @@ class App extends React.Component {
 
           <div className='navbar'>
             <div className='navbar-profile'>
-              {this.showNavLink()} <p>Snacks</p>
-            <Link className='nav-link add-snack' to='/add'>Add</Link><p>Snack</p>
+              <div className='navbar-profile-button'>
+                {this.showNavLink()}
+              </div>
+              <div className='navbar-profile-button add-snack'>
+                <Link className='nav-link' to='/add'>Add</Link>
+              </div>
             </div>
             <div className='navbar-header'>
               <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>

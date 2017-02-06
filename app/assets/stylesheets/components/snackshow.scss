@@ -68,26 +68,17 @@
 
 .show-index-button {
   width: 20%;
-  // height: 140px;
   height: 100%;
-  // margin: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  // line-height: 110px;
   transition: .5s;
   font-size: 25px;
   color: rgb(147,16,9);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.show-index-button:hover {
-  padding-left: 2vh;
 }
 
 .show-index-title {
@@ -128,24 +119,33 @@
   justify-content: center;
   align-items: center;
   color: #1b1d1f;
+}
+
+.show-index-user-button {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background-color: rgb(147,16,9);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  transition: .5s;
+  padding: 5px 30px;
+
 
   p {
     font-size: 25px;
     line-height: normal;
     text-align: center;
-    padding: 5px;
-  }
-
-  p:nth-child(2) {
-    text-decoration: underline;
-    color: rgb(147,16,9);
     transition: .5s;
-    cursor: pointer;
+    color: white;
   }
+}
 
-  p:nth-child(2):hover {
-    padding-left: 2vh;
-  }
+.show-index-user-button:hover {
+  margin-bottom: 10px;
 }
 
 .show-index-avgrating-item {

@@ -61,12 +61,16 @@ class SnackShow extends React.Component {
               <div className="show-index-title">
                 <p>{ snack.name }</p><p>{ snack.description }</p>
               </div>
-              <div className="show-index-sharer">
-                <p>Shared by:</p><p onClick = {this.handleUserClick}>{ snack.user_name }</p>
-              </div>
               <RatingsForm snack={snack} addRating={ addRating } />
-              <div onClick = {this.handleDelete} className="show-index-button">
-                <p>Delete</p>
+                <div className="show-index-sharer">
+                  <div className="show-index-user-button" onClick = {this.handleUserClick}>
+                    <p>{ snack.user_name }</p>
+                  </div>
+                </div>
+              <div className="show-index-button">
+                <div className="show-index-user-button" onClick = {this.handleDelete}>
+                  <p>Delete</p>
+                </div>
               </div>
             </div>
             <div className="show-index-avgrating-item">

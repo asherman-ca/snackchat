@@ -136,39 +136,65 @@
   border-bottom-right-radius: 10px;
   color: #1b1d1f;
 
+  // p {
+  //   font-size: 25px;
+  //   line-height: normal;
+  //   text-align: center;
+  // }
+  //
+  // p:nth-child(2) {
+  //   color: rgb(147,16,9);
+  //   cursor: pointer;
+  //   text-decoration: underline;
+  //   transition: .5s;
+  // }
+  //
+  // p:nth-child(2):hover {
+  //   padding-left: 2vh;
+  // }
+  //
+  // .rater-credit {
+  //   color: #1b1d1f;
+  //   cursor: default;
+  //   text-decoration: none;
+  // }
+  //
+  // .rater-credit:hover {
+  //   font-size: inherit;
+  //   text-shadow: inherit;
+  // }
+}
+
+.rating-index-rater-button {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 5px 30px;
+  border-radius: 2px;
+  background-color: rgb(147,16,9);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  transition: .5s;
+
   p {
     font-size: 25px;
     line-height: normal;
     text-align: center;
-  }
-
-  p:nth-child(2) {
-    color: rgb(147,16,9);
-    cursor: pointer;
-    text-decoration: underline;
     transition: .5s;
+    color: white;
   }
+}
 
-  p:nth-child(2):hover {
-    padding-left: 2vh;
-  }
-
-  .rater-credit {
-    color: #1b1d1f;
-    cursor: default;
-    text-decoration: none;
-  }
-
-  .rater-credit:hover {
-    font-size: inherit;
-    text-shadow: inherit;
-  }
+.rating-index-rater-button:hover {
+  margin-bottom: 10px;
 }
 
 .rating-index-title {
   height: 140px;
   width: 25%;
-  // margin: 10px;
+  // padding: 5%;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
@@ -177,24 +203,24 @@
   align-items: center;
   color: #1b1d1f;
 
-  p {
-    text-align: center;
-    line-height: normal;
-    font-size: 25px;
-  }
-
-  p:first-child {
-    color: rgb(147,16,9);
-    cursor: pointer;
-    transition: .5s;
-    text-decoration: underline;
-  }
-
-  p:first-child:hover {
-    padding-left: 2vh;
-  }
-
-  p:nth-child(2) {
-    font-style: italic;
-  }
+  // p {
+  //   text-align: center;
+  //   line-height: normal;
+  //   font-size: 25px;
+  // }
+  //
+  // p:first-child {
+  //   color: rgb(147,16,9);
+  //   cursor: pointer;
+  //   transition: .5s;
+  //   text-decoration: underline;
+  // }
+  //
+  // p:first-child:hover {
+  //   padding-left: 2vh;
+  // }
+  //
+  // p:nth-child(2) {
+  //   font-style: italic;
+  // }
 }
