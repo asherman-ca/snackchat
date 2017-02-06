@@ -16,10 +16,10 @@
 }
 
 .show-index-container {
-  min-height: 89vh;
-  margin-top: 1vh;
   // margin-top: 1%;
   // min-height: 89%;
+  min-height: 89vh;
+  margin-top: 1vh;
   width: 99%;
   padding: 10px;
   display: flex;
@@ -120,12 +120,14 @@
   width: 20%;
   // height: 140px;
   height: 100%;
+  padding: 10px;
+  padding-bottom: 55px;
   // margin: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2em;
   color: #1b1d1f;
@@ -170,11 +172,13 @@
   .show-index-avgrating-text{
     width: 100%;
     height: 100%;
+    padding: 10px;
+    padding-bottom: 55px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: white;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 
@@ -203,11 +207,13 @@
   .ratingform {
     width: 100%;
     height: 100%;
+    padding: 10px;
+    padding-bottom: 55px;
     // line-height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     .form-sub{
       display: flex;
