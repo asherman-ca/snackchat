@@ -24,10 +24,6 @@ $line-height: 10vh;
    width: 7vw;
    transition: .5s;
  }
-
- // img:hover {
- //   width: 8vw;
- // }
 }
 
 .navbar-profile {
@@ -42,7 +38,9 @@ $line-height: 10vh;
   color: rgb(147,16,9);
 
   .navbar-profile-button {
-    padding: 5px 30px;
+    // padding: 5px 30px;
+    height: 50px;
+    width: 150px;
     background-color: rgb(147,16,9);
     font-size: 30px;
     display: flex;
@@ -159,7 +157,8 @@ $line-height: 10vh;
   cursor: pointer;
 
   .nav-action {
-    padding: 5px 30px;
+    height: 50px;
+    width: 150px;
     background-color: rgb(147,16,9);
     font-size: 30px;
     display: flex;
