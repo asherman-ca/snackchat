@@ -20,16 +20,13 @@
   height: 100%;
   width: 99%;
   padding: 10px;
-  // background: rgba(255, 255, 255, 0.5);
   margin-top: 1vh;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  // color: rgb(147,16,9);
   overflow-y: hidden;
-  // overflow-y: scroll;
 }
 
 .rating-index-top {
@@ -40,7 +37,6 @@
   margin-right: 42.5%;
   margin-left: 42.5%;
   background-color: #f2f2f2;
-  font-size: 1.5em;
   color: #1b1d1f;
   display: flex;
   justify-content: center;
@@ -63,6 +59,7 @@
   width: 100%;
   margin: 10px;
   border-radius: 12px;
+  font-size: 25px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
@@ -76,6 +73,7 @@
   background-color: #f2f2f2;
   margin: 2%;
   height: 160px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   transition: .5s;
@@ -92,8 +90,8 @@
 
 .rating-index-image {
   height: 140px;
-  width: 25%;
-  margin: 10px;
+  width: 24%;
+  margin-right: 1%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   border-top-left-radius: 10px;
@@ -108,17 +106,16 @@
 .rating-index-rating {
   height: 140px;
   width: 25%;
-  margin: 10px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
   color: #1b1d1f;
 
   p {
+    font-size: 25px;
     width: 100%;
     line-height: normal;
     text-align: center;
@@ -128,7 +125,7 @@
 .rating-index-rater {
   height: 140px;
   width: 25%;
-  margin: 10px;
+  // margin: 10px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
@@ -137,10 +134,10 @@
   align-items: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  font-size: 1.2em;
   color: #1b1d1f;
 
   p {
+    font-size: 25px;
     line-height: normal;
     text-align: center;
   }
@@ -171,19 +168,19 @@
 .rating-index-title {
   height: 140px;
   width: 25%;
-  margin: 10px;
+  // margin: 10px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
   color: #1b1d1f;
 
   p {
     text-align: center;
     line-height: normal;
+    font-size: 25px;
   }
 
   p:first-child {

@@ -32,9 +32,10 @@ class RatingsForm extends React.Component {
       return (
           <div className="show-rating-form">
             <form onSubmit={this.addRating} className='ratingform'>
-              <p>Rate:</p>
+
 
               <div className='form-sub'>
+                <p>Rate:</p>
                 <input name='rating'
                        value={ this.state.rating }
                        onChange={ this.update('rating') }
