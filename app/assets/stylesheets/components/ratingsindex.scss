@@ -10,17 +10,17 @@
   }
 }
 
-.rating-index {
-  display: flex;
-  justify-content: center;
-}
+// .rating-index {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .rating-index-container {
-  min-height: 89vh;
-  height: 100%;
-  width: 99%;
-  padding: 10px;
-  margin-top: 1vh;
+  min-height: 90vh;
+  // height: 100%;
+  width: 100%;
+  // padding-top: 20px;
+  padding: 1%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -36,6 +36,7 @@
   // margin-bottom: 2%;
   margin-right: 42.5%;
   margin-left: 42.5%;
+  padding: 10px;
   background-color: #f2f2f2;
   color: #1b1d1f;
   display: flex;
@@ -55,9 +56,9 @@
 }
 
 .rating-index-top-text {
-  height: 75px;
+  height: 100%;
   width: 100%;
-  margin: 10px;
+  // margin: 10px;
   border-radius: 12px;
   font-size: 20px;
   background-color: white;
@@ -71,7 +72,10 @@
 .rating-index-item {
   width: 46%;
   background-color: #f2f2f2;
-  margin: 2%;
+  // margin: 1% 2%;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
   height: 160px;
   padding: 10px;
   display: flex;
