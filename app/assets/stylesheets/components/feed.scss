@@ -10,17 +10,18 @@
   }
 }
 
-.feed-index {
-  display: flex;
-  justify-content: center;
-}
+// .feed-index {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 .feed-index-container {
-  min-height: 89vh;
+  min-height: 90vh;
   height: 100%;
-  width: 99%;
-  margin-top: 1vh;
-  padding: 10px;
+  width: 100%;
+  // margin-top: 1vh;
+  padding-top: 1%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;

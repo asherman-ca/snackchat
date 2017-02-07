@@ -19,7 +19,7 @@ class Feed extends React.Component {
     const snacks = this.props.snacks;
     if (snacks) {
       return (
-        <div className='feed-index'>
+
           <div className='feed-index-container'>
             <div className='feed-index-top'>
               <div className='feed-index-top-text'>
@@ -28,7 +28,7 @@ class Feed extends React.Component {
             </div>
             {snacks.map(snack => <FeedIndexItem key={snack.id} snack={snack} />)}
           </div>
-        </div>
+
       );
     }
   }
