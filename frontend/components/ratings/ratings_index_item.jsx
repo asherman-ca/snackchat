@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+const Rating = require('react-rating');
 
 class RatingIndexItem extends React.Component {
   constructor(props) {
@@ -26,7 +27,8 @@ class RatingIndexItem extends React.Component {
           <img src={ snack_url } />
         </div>
         <div className="rating-index-rating">
-          <p>{ rating } stars</p>
+          <Rating initialRate={ rating } readonly={true}
+                  empty="fa fa-star grey fa-lg" full="fa fa-star gold fa-lg"/>
         </div>
         <div className="rating-index-title">
           <div className="rating-index-rater-button" onClick = {this.handleSnackClick}>
@@ -44,3 +46,6 @@ class RatingIndexItem extends React.Component {
 }
 
 export default withRouter(RatingIndexItem);
+
+
+// <p>{ rating } stars</p>

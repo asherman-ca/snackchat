@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+const Rating = require('react-rating');
 
 class SnackRatingsItem extends React.Component {
   constructor(props) {
@@ -24,7 +25,8 @@ class SnackRatingsItem extends React.Component {
     return (
       <div className="snack-rating-index-item">
         <div className="snack-rating-index-rating">
-          <p>{ rating } stars</p>
+          <Rating initialRate={ rating } readonly={true}
+                  empty="fa fa-star grey fa-lg" full="fa fa-star gold fa-lg"/>
         </div>
         <div className="snack-rating-index-rater">
           <div className="rater-user-button" onClick = {this.handleUserClick}>

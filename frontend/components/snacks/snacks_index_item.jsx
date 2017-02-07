@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+const Rating = require('react-rating');
 
 class SnackIndexItem extends React.Component {
   constructor(props) {
@@ -24,7 +25,9 @@ class SnackIndexItem extends React.Component {
           <p>{ name }</p><p className="snack-index-credit">{ description }</p>
         </div>
         <div className="snack-index-rating">
-          <p>Average Rating:</p><p>{ average_rating }</p>
+          <p>Average Rating:</p>
+          <Rating initialRate={ average_rating } readonly={true}
+                  empty="fa fa-star grey fa-lg" full="fa fa-star gold fa-lg"/>
         </div>
       </div>
     );

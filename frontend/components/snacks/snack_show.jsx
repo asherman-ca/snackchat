@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router';
 import SnackRatingsItem from '../ratings/snack_ratings_item';
 import RatingsForm from '../ratings/ratings_form';
+const Rating = require('react-rating');
 
 class SnackShow extends React.Component {
   constructor(props) {
@@ -74,7 +75,11 @@ class SnackShow extends React.Component {
             </div>
             <div className="show-index-avgrating-item">
               <div className="show-index-avgrating-text">
-                <p>Average Rating:</p><p>{ snack.average_rating }</p>
+
+                <p>Average Rating:</p>
+                <Rating initialRate={ snack.average_rating } readonly={true}
+                        empty="fa fa-star grey fa-lg" full="fa fa-star gold fa-lg"/>
+                
               </div>
             </div>
             <div className="show-ratings-index">
