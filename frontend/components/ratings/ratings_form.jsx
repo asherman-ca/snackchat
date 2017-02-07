@@ -40,14 +40,12 @@ class RatingsForm extends React.Component {
           <div className="show-rating-form">
             <form onSubmit={this.addRating} className='ratingform'>
 
-            <Rating empty="fa fa-star grey fa-2x" full="fa fa-star gold fa-2x"
+            <Rating empty="fa fa-star grey fa-lg" full="fa fa-star gold fa-lg"
                     onClick={this.updateRating}/>
-
 
             <input type='submit'
                   className='ratingform-button'
-                  value='Stars'></input>
-
+                  value='Rate'></input>
             </form>
           </div>
 
