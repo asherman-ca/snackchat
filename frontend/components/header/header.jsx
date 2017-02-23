@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Link } from 'react-router';
+import { Link } from 'react-router';
 
 class Header extends React.Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class Header extends React.Component {
       </div>
     </div>
     <div className='navbar-header'>
-      <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>
+      <h1><Link to='/ratings'>{this.props.navTitle}</Link></h1><p>share your snacks</p>
     </div>
     <div className='navbar-functions'>
       <div className='nav-action'>
@@ -44,4 +44,4 @@ class Header extends React.Component {
   }
 }
 
-export default withRouter(Header);
+export default Header;

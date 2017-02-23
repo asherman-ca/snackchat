@@ -13,7 +13,10 @@ const mapDispatchToProps = dispatch => ({
   removeSnacks: () => dispatch(removeSnacks())
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(SnacksIndex);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(SnacksIndex);
 
 
 // const mapStateToProps = (state, ownProps ) =>

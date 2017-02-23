@@ -27,11 +27,7 @@ class SnacksIndex extends React.Component {
       return (
 
           <div className="snack-index-container">
-            <div className="snack-index-user">
-              <div className="snack-index-user-text">
-                <h1>{snacks[0].user_name}'s Snacks</h1>
-              </div>
-            </div>
+          
             {snacks.map(snack => <SnackIndexItem key={snack.id} snack={snack} />)}
           </div>
 

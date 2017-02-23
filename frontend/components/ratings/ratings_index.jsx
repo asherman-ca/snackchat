@@ -21,14 +21,10 @@ class RatingsIndex extends React.Component {
       return (
 
           <div className="rating-index-container">
-            <div className="rating-index-top">
-              <div className="rating-index-top-text">
-                <h1>Recent Ratings</h1>
-              </div>
-            </div>
+            
             {ratings.map(rating => <RatingIndexItem key={Math.random()} rating={rating} />)}
           </div>
-  
+
       );
     } else {
       return <div></div>;
