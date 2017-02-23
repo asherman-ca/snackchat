@@ -32,7 +32,7 @@ class App extends React.Component {
     if (path.includes('profile')) {
       navTitle = `${this.props.user.username}'s Snacks`;
     } else if (path.includes('add')) {
-      navTitle = 'Add a Snack';
+      navTitle = 'Add Snack';
     } else if (path.includes('ratings')) {
       navTitle = 'Recent Ratings';
     } else if (path.includes('feed')) {
