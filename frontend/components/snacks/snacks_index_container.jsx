@@ -14,3 +14,12 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SnacksIndex);
+
+
+// const mapStateToProps = (state, ownProps ) =>
+// { console.log(ownProps);
+// return {
+//   snacks: selectAllSnacks(state).slice().reverse(),
+//   id: ownProps.routeParams.userId
+// };
+// };

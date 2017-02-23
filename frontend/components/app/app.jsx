@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router';
+import Header from '../header/header_container';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,49 +21,16 @@ class App extends React.Component {
     if(!newProps.loggedIn){
       this.props.router.replace('/');
     }
-  }
-
-  showNavLink(){
-    const user = this.props.user;
-    if (user) {
-      return <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>;
-    }
+    console.log(this.props);
   }
 
   render(){
-
     return (
       <div className='browse-sidebars'>
-
-          <div className='navbar'>
-            <div className='navbar-profile'>
-              <div className='navbar-profile-button'>
-                {this.showNavLink()}
-              </div>
-              <div className='navbar-profile-button add-snack'>
-                <Link className='nav-link' to='/add'>Add</Link>
-              </div>
-            </div>
-            <div className='navbar-header'>
-              <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>
-            </div>
-            <div className='navbar-functions'>
-              <div className='nav-action'>
-                <Link to='/feed'>
-                  <span>Snacks</span>
-                </Link>
-              </div>
-              <div className='nav-action log-action'>
-                <a onClick={ () => this.props.logout()}>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <Header />
           <div className='browse'>
             {this.props.children}
           </div>
-
       </div>
     );
   }

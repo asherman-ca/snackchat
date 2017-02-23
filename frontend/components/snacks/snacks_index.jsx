@@ -34,7 +34,7 @@ class SnacksIndex extends React.Component {
             </div>
             {snacks.map(snack => <SnackIndexItem key={snack.id} snack={snack} />)}
           </div>
-          
+
       );
     } else {
       return <div></div>;
