@@ -1,9 +1,12 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router';
+import Header from '../header/header_container';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+    this.createNavbarTitle = this.createNavbarTitle.bind(this);
   }
 
   _redirectLoggedOut() {
@@ -20,49 +23,35 @@ class App extends React.Component {
     if(!newProps.loggedIn){
       this.props.router.replace('/');
     }
+    // console.log(this.props);
   }
 
-  showNavLink(){
-    const user = this.props.user;
-    if (user) {
-      return <Link className='nav-link' to={`/profile/${user.id}`}>{user.username}</Link>;
+  createNavbarTitle() {
+    let path = this.props.router.location.pathname;
+    let navTitle;
+    if (path.includes('profile')) {
+      // navTitle = `${this.props.user.username}'s Snacks`;
+      navTitle = 'Your Snacks';
+    } else if (path.includes('add')) {
+      navTitle = 'Add Snack';
+    } else if (path.includes('ratings')) {
+      navTitle = 'Recent Ratings';
+    } else if (path.includes('feed')) {
+      navTitle = 'Local Snacks';
+    } else if (path.includes('snacks')) {
+      navTitle = 'SnackChat';
     }
+
+    return navTitle;
   }
 
-  render(){
-
+  render() {
     return (
       <div className='browse-sidebars'>
-
-          <div className='navbar'>
-            <div className='navbar-profile'>
-              <div className='navbar-profile-button'>
-                {this.showNavLink()}
-              </div>
-              <div className='navbar-profile-button add-snack'>
-                <Link className='nav-link' to='/add'>Add</Link>
-              </div>
-            </div>
-            <div className='navbar-header'>
-              <h1><Link to='/ratings'>SnackChat</Link></h1><p>share your snacks</p>
-            </div>
-            <div className='navbar-functions'>
-              <div className='nav-action'>
-                <Link to='/feed'>
-                  <span>Snacks</span>
-                </Link>
-              </div>
-              <div className='nav-action log-action'>
-                <a onClick={ () => this.props.logout()}>
-                  <span>Logout</span>
-                </a>
-              </div>
-            </div>
-          </div>
+          <Header navTitle={ this.createNavbarTitle() }/>
           <div className='browse'>
             {this.props.children}
           </div>
-
       </div>
     );
   }
