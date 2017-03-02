@@ -40,6 +40,7 @@ class App extends React.Component {
       // navTitle = `${this.props.user.username}'s Snacks`;
       // navTitle = `${this.props.snacks[Object.keys(this.props.snacks)[0]].user_name}`;
       // navTitle = 'User Snacks';
+      navTitle += "'s Snacks";
     } else if (path.includes('add')) {
       navTitle = 'Add Snack';
     } else if (path.includes('ratings')) {
