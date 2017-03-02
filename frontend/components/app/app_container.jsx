@@ -2,10 +2,11 @@ import { connect } from 'react-redux';
 import App from './app';
 import { logout } from '../../actions/session_actions';
 
-const mapStateToProps = ({ session }) => ({
-  loggedIn: Boolean(session.currentUser),
-  user: session.currentUser,
-  errors: session.errors
+const mapStateToProps = ( store ) => ({
+  snacks: store.snacks,
+  loggedIn: Boolean(store.session.currentUser),
+  user: store.session.currentUser,
+  errors: store.session.errors
 });
 
 const mapDispatchToProps = dispatch => ({

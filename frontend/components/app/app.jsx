@@ -29,9 +29,16 @@ class App extends React.Component {
   createNavbarTitle() {
     let path = this.props.router.location.pathname;
     let navTitle;
+    if (this.props.snacks) {
+      // console.log(this.props.snacks[Object.keys(this.props.snacks)[0]].user_name);
+      console.log(this.props.snacks[Object.keys(this.props.snacks)[0]]);
+    }
+    // console.log(this.props);
+    // console.log(this.props);
     if (path.includes('profile')) {
       // navTitle = `${this.props.user.username}'s Snacks`;
-      navTitle = 'Your Snacks';
+      // navTitle = `${this.props.snacks.first.user_name}`;
+      navTitle = 'User Snacks';
     } else if (path.includes('add')) {
       navTitle = 'Add Snack';
     } else if (path.includes('ratings')) {
