@@ -25,15 +25,20 @@ class Header extends React.Component {
       </div>
     </div>
     <div className='navbar-header'>
-      <h1><Link to='/ratings'>{this.props.navTitle}</Link></h1><p>share your snacks</p>
+      <h1>{this.props.navTitle}</h1>
     </div>
     <div className='navbar-functions'>
+      <div className='nav-action'>
+        <Link to='/ratings'>
+          <span>Ratings</span>
+        </Link>
+      </div>
       <div className='nav-action'>
         <Link to='/feed'>
           <span>Snacks</span>
         </Link>
       </div>
-      <div className='nav-action log-action'>
+      <div className='nav-action'>
         <a onClick={ () => this.props.logout()}>
           <span>Logout</span>
         </a>

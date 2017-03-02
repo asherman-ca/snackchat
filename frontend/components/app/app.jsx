@@ -30,13 +30,16 @@ class App extends React.Component {
     let path = this.props.router.location.pathname;
     let navTitle;
     if (path.includes('profile')) {
-      navTitle = `${this.props.user.username}'s Snacks`;
+      // navTitle = `${this.props.user.username}'s Snacks`;
+      navTitle = 'Your Snacks';
     } else if (path.includes('add')) {
       navTitle = 'Add Snack';
     } else if (path.includes('ratings')) {
       navTitle = 'Recent Ratings';
     } else if (path.includes('feed')) {
       navTitle = 'Local Snacks';
+    } else if (path.includes('snacks')) {
+      navTitle = 'SnackChat';
     }
 
     return navTitle;
